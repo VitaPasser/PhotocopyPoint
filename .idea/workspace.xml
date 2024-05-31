@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Configuration/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Calc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Operator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/PickUpStation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/PriceList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Term.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Type.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/AbstractTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/EntryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/PickUpStation/FixSale.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/PickUpStation/GetOperator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/PriceList/GetPrice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Sql/Get.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/TestResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/TypeList/GetTimePerTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/TypeList/GetType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Util/Mysql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/vitapasser/photocopypoint/hello-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaFXApplication" />
+        <option value="Record" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33-sources.jar!/com/mysql/cj/jdbc/ConnectionImpl.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2gouusIlE4AFF79UjItNqY7LJhD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.General",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vita\Documents\Политехникум\2 Курс\4 семестр\Курсовая\src\PhotocopyPoint" />
+      <recent name="C:\Users\vita\Documents\Политехникум\2 Курс\4 семестр\Курсовая\src\PhotocopyPoint\src\main\java\org\vitapasser\photocopypoint" />
+      <recent name="C:\Users\vita\Documents\Политехникум\2 Курс\4 семестр\Курсовая\src\PhotocopyPoint\src\main\java\org\vitapasser\photocopypoint\Model" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.vitapasser.photocopypoint.Model" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.HelloApplication" />
+      <module name="PhotocopyPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.vitapasser.photocopypoint.Controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HelloApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="" />
+      <created>1716376477121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1716376477121</updated>
+      <workItem from="1716899434537" duration="3481000" />
+      <workItem from="1716904462606" duration="259000" />
+      <workItem from="1716904731210" duration="266000" />
+      <workItem from="1716905007297" duration="379000" />
+      <workItem from="1716911841041" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
