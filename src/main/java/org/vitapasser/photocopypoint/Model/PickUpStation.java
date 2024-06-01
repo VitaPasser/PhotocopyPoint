@@ -1,11 +1,12 @@
 package org.vitapasser.photocopypoint.Model;
 
-import org.vitapasser.photocopypoint.Util.Mysql;
-
 import java.sql.*;
 import java.util.Objects;
 
 public record PickUpStation(Connection connectionToDataBase, String address) {
+
+    public record OrderIDOddMoney(long orderID, Money oddMoney){}
+
     /*
      * Через запрос у базу даних отримуються вільний оператор
      * та повератється методом. (return null - є заглушка)
@@ -34,6 +35,7 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
                             "on PhotocopyPoint.TypeServiceOrder.id = PhotocopyPoint.`Order`.`id`\n" +
                             "where (PhotocopyPoint.TypeServiceOrder.term < NOW() or " +
                             "(PhotocopyPoint.TypeServiceOrder.term is null)) LIMIT 1;");
+
             sqlResult.next();
             return new Operator(sqlResult.getLong("id"),
                     sqlResult.getString("full_name"));
@@ -49,31 +51,24 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
      * Через запрос у базу даних отправляється замовлення.
      * Також метод рахує здачу. (return null - є заглушка)
      */
-    public Money fixSale(Order order, Money countPayMoney) {
+    public OrderIDOddMoney fixSale(Order order, Money countPayMoney) {
         try {
 
             StringBuilder sql;
             PreparedStatement statement;
 
-            long id = insertMoney(order);
-            id = insertContactInfo(order);
-
-
-
-            sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.Client(station_name, contact_info_id) " +
-                    "VALUES ('?', @client_contact_info_id);\n");
-            sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.`Order`(money_id, client_id) " +
-                    "VALUES (@money_id, @client_id);\n");
-
-            sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.TypeServiceOrder(order_id, term, type_service_id, " +
-                    "count) VALUES (@order_id, ADDTIME(NOW(), SEC_TO_TIME(?)), ?, ?);\\n");
-
-            sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.OrderStaff(order_id, staff_id, specialization) " +
-                    "VALUES (@order_id, ?, 'Оператор принтеру');\n");
-
-
-            PreparedStatement preparedStatement = connectionToDataBase.prepareStatement(sql.toString(),
-                    Statement.RETURN_GENERATED_KEYS);
+            long idMoney = insertMoney(order);
+            long idContactInfo = insertContactInfo(order);
+            long idClient = insertClient(idContactInfo);
+            long idOrder = insertOrder(idMoney, idClient);
+            order.getTypes().forEach(type -> {
+                try {
+                    insertTypeServiceOrder(idOrder, type, order.getTerm());
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+            });
+            insertOrderStaff(idOrder, order.getOperator());
 
             Money oddMoney = null;
             Money orderPrice = order.getPrice();
@@ -81,20 +76,76 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
                 oddMoney = new Money(countPayMoney.count() - orderPrice.count(),
                         orderPrice.unit());
 
-            return oddMoney;
+            return new OrderIDOddMoney(idOrder, oddMoney);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
+            e.printStackTrace();
         }
 
         return null;
+    }
+
+    private void insertOrderStaff(long idOrder, Operator operator) throws SQLException {
+        StringBuilder sql;
+        PreparedStatement statement;
+        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.OrderStaff(order_id, staff_id, specialization) " +
+                "VALUES (?, ?, 'Оператор принтеру');\n");
+        statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
+        statement.setLong(1, idOrder);
+        statement.setLong(2, operator.id());
+
+        checkAffectRows(statement.executeUpdate());
+        getId(statement);
+    }
+
+    private void insertTypeServiceOrder(long idOrder, Type type, Term term) throws SQLException {
+        StringBuilder sql;
+        PreparedStatement statement;
+        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.TypeServiceOrder(order_id, term, type_service_id, " +
+                "count) VALUES (?, ADDTIME(NOW(), SEC_TO_TIME(?)), ?, ?);\n");
+        statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
+        statement.setLong(1, idOrder);
+        //statement.setLong(2, type.);
+        statement.setInt(2, term.getValue());
+        statement.setLong(3, type.id());
+        statement.setInt(4, type.count().count());
+
+        checkAffectRows(statement.executeUpdate());
+        getId(statement);
+    }
+
+    private long insertOrder(long idMoney, long idClient) throws SQLException {
+        StringBuilder sql;
+        PreparedStatement statement;
+        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.`Order`(money_id, client_id) " +
+                "VALUES (?, ?);\n");
+        statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
+        statement.setLong(1, idMoney);
+        statement.setLong(2, idClient);
+
+        checkAffectRows(statement.executeUpdate());
+        return getId(statement);
+    }
+
+    private long insertClient(long id) throws SQLException {
+        StringBuilder sql;
+        PreparedStatement statement;
+        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.Client(station_name, contact_info_id) " +
+                "VALUES (?, ?);\n");
+        statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
+        statement.setString(1, address);
+        statement.setLong(2, id);
+
+        checkAffectRows(statement.executeUpdate());
+        return getId(statement);
     }
 
     private long insertContactInfo(Order order) throws SQLException {
         StringBuilder sql;
         PreparedStatement statement;
         sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.Contact_info(full_name, phone_number) " +
-                "VALUES ('?', '?');\n");
+                "VALUES (?, ?);\n");
         statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
         statement.setString(1, order.getFullName());
         statement.setString(2, order.getPhoneNumber());
@@ -106,7 +157,7 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
     private long insertMoney(Order order) throws SQLException {
         StringBuilder sql;
         PreparedStatement statement;
-        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.Money(count, unit) VALUES (?, '?');\n");
+        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.Money(count, unit) VALUES (?, ?);\n");
         statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
         statement.setDouble(1, order.getPrice().count());
         statement.setString(2, order.getPrice().unit());

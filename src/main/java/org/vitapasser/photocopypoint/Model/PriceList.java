@@ -25,6 +25,7 @@ public class PriceList {
                             "inner join PhotocopyPoint.TypeService on PhotocopyPoint.TypeService.price_id = PhotocopyPoint.Price.id \n" +
                             "where PhotocopyPoint.TypeService.name = \""+typeName+"\"\n" +
                             "ORDER BY PhotocopyPoint.Price.create_time DESC LIMIT 1;");
+
             sqlResult.next();
             return new Money(sqlResult.getDouble("count"),
                     sqlResult.getString("unit"));

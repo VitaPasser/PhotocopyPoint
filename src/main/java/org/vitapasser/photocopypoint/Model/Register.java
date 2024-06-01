@@ -5,11 +5,13 @@ public class Register {
     private final TypeList typeList;
     private final PriceList priceList;
     private final PickUpStation pickUpStation;
+    private final TicketList ticketList;
 
-    public Register(TypeList typeList, PriceList priceList, PickUpStation pickUpStation) {
+    public Register(TypeList typeList, PriceList priceList, PickUpStation pickUpStation, TicketList ticketList) {
         this.typeList = typeList;
         this.priceList = priceList;
         this.pickUpStation = pickUpStation;
+        this.ticketList = ticketList;
     }
 
     public void newOrder() {
@@ -34,6 +36,7 @@ public class Register {
          return order.makePayment(countPayMoney,
                 fullName,
                 phoneNumber,
-                pickUpStation);
+                pickUpStation,
+                 ticketList);
     }
 }

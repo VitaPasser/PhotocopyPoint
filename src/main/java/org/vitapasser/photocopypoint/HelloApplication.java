@@ -33,30 +33,30 @@ public class HelloApplication extends Application {
 
     @Override
     public void start(Stage stage) throws IOException, SQLException {
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
-            System.out.println("Connection driver included!");
+//        try{
+//            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
+//            System.out.println("Connection driver included!");
+//
+//            try (Connection connection = getConnection()) {
+//
+//                EntryTests entryTests = new EntryTests(connection);
+//
+//            } catch (Exception e) {
+//                System.out.println(e.getMessage());
+//            }
+//        }
+//        catch(Exception ex){
+//            System.out.println("Connection failed...");
+//
+//            System.out.println(ex);
+//        }
 
-            try (Connection connection = getConnection()) {
 
-                EntryTests entryTests = new EntryTests(connection);
-
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-            }
-        }
-        catch(Exception ex){
-            System.out.println("Connection failed...");
-
-            System.out.println(ex);
-        }
-
-
-//        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-//        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-//        stage.setTitle("Hello!");
-//        stage.setScene(scene);
-//        stage.show();
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("order-management.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Hello!");
+        stage.setScene(scene);
+        stage.show();
 
     }
 

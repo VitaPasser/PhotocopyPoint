@@ -19,9 +19,12 @@ public class TypeList {
             Statement statement = connectionToDataBase.createStatement();
 
             ResultSet sqlResult = statement.executeQuery(
-                    "SELECT PhotocopyPoint.TypeService.id, PhotocopyPoint.TypeService.name, PhotocopyPoint.TypeService.info, PhotocopyPoint.TypeService.create_time From PhotocopyPoint.TypeService\n" +
+                    "SELECT PhotocopyPoint.TypeService.id, PhotocopyPoint.TypeService.name, " +
+                            "PhotocopyPoint.TypeService.info, PhotocopyPoint.TypeService.create_time " +
+                            "From PhotocopyPoint.TypeService\n" +
                             "where PhotocopyPoint.TypeService.name = \"" + typeName + "\"\n" +
                             "ORDER BY PhotocopyPoint.TypeService.create_time DESC LIMIT 1;");
+
             sqlResult.next();
             return new Type(sqlResult.getLong("id"),
                     sqlResult.getString("name"),

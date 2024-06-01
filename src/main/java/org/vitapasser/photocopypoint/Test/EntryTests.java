@@ -3,7 +3,10 @@ package org.vitapasser.photocopypoint.Test;
 import org.vitapasser.photocopypoint.Test.PickUpStation.FixSale;
 import org.vitapasser.photocopypoint.Test.PickUpStation.GetOperator;
 import org.vitapasser.photocopypoint.Test.PriceList.GetPrice;
+import org.vitapasser.photocopypoint.Test.Register.GetTerm;
+import org.vitapasser.photocopypoint.Test.Register.MakePayment;
 import org.vitapasser.photocopypoint.Test.Sql.Get;
+import org.vitapasser.photocopypoint.Test.TicketList.CreateTicket;
 import org.vitapasser.photocopypoint.Test.TypeList.GetTimePerTime;
 import org.vitapasser.photocopypoint.Test.TypeList.GetType;
 
@@ -21,8 +24,13 @@ public class EntryTests {
         new TestResult(new GetPrice(connection));
         System.out.println("Testing PickUpStation... ");
         new TestResult(new GetOperator(connection));
-        // Доробити після
         new TestResult(new FixSale(connection));
+        System.out.println("Testing TicketList... ");
+        new TestResult(new CreateTicket(connection));
+        System.out.println("Testing Register... ");
+        new TestResult((new GetTerm(connection)));
+        new TestResult((new GetPrice(connection)));
+        new TestResult((new MakePayment(connection)));
 
         System.out.println("Test successful complete!");
 

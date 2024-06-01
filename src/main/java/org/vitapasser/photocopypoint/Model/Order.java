@@ -35,18 +35,17 @@ public class Order {
     public Money makePayment(Money countPayMoney,
                              String fullName,
                              String phoneNumber,
-                             PickUpStation pickUpStation) {
+                             PickUpStation pickUpStation,
+                             TicketList ticketList) {
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
         operator = pickUpStation.getOperator();
-        Money change = pickUpStation.fixSale(this, countPayMoney);
-        print();
+
+        PickUpStation.OrderIDOddMoney orderIDOddMoney = pickUpStation.fixSale(this, countPayMoney);
+        assert orderIDOddMoney != null;
+        Money change = orderIDOddMoney.oddMoney();
+        ticketList.createTicket(orderIDOddMoney.orderID());
         return change;
-    }
-    public void print() {
-        /*
-        * Друкує інформацію об об'єкті.
-        * */
     }
 
     /*

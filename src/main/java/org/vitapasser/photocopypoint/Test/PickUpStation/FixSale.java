@@ -5,6 +5,7 @@ import org.vitapasser.photocopypoint.Test.AbstractTest;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Objects;
 
@@ -31,7 +32,9 @@ public class FixSale extends AbstractTest {
 
         Money pay = new Money(500.00, "UAH");
 
-        Money odd_money = pickUpStation.fixSale(order, pay);
+        PickUpStation.OrderIDOddMoney orderIDOddMoney = pickUpStation.fixSale(order, pay);
+        assert orderIDOddMoney != null;
+        Money odd_money = orderIDOddMoney.oddMoney();
         Money odd_money_check = new Money(pay.count() - order.getPrice().count(), pay.unit());
 
         Boolean oddMoneyTest = Objects.equals(odd_money, odd_money_check);
@@ -48,14 +51,18 @@ public class FixSale extends AbstractTest {
             ResultSet sqlResult = statement.executeQuery(sqlCheck);
             sqlResult.next();
 
-            String fullNameCreated = sqlResult.getString("name");
+            String fullNameCreated = sqlResult.getString("full_name");
+            long orderId = sqlResult.getLong("id");
 
-            Boolean QueryTest = Objects.equals(fullNameCreated, fullName);
+            Boolean QueryTest = Objects.equals(fullNameCreated, fullName) &&
+                    Objects.equals(orderId, orderIDOddMoney.orderID());
+
 
             return oddMoneyTest && QueryTest;
         } catch (Exception e)
         {
             System.out.println("Error on test 'FixSale': " +e.getMessage());
+            e.printStackTrace();
         }
         return false;
     }
