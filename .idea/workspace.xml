@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project made">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/TypeView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/TypeView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagementController.java" afterDir="false" />
+    <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project cleared">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/TestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/TestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TicketListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TicketListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TypeListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TypeListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +75,7 @@
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint/CashierInterface/src/main/java/org/vitapasser/cashierinterface&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -109,6 +102,10 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.vitapasser.photocopypoint" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\vita\Documents\Политехникум\2 Курс\4 семестр\Курсовая\Программа\v1\src\PhotocopyPoint\CashierInterface\src\main\java\org\vitapasser\cashierinterface" />
+      <recent name="C:\Users\vita\Documents\Политехникум\2 Курс\4 семестр\Курсовая\Программа\v1\src\PhotocopyPoint\CashierInterface\src\main\resources\org\vitapasser\cashierinterface" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\vita\Documents\Политехникум\2 Курс\4 семестр\Курсовая\src\PhotocopyPoint" />
@@ -268,7 +265,8 @@
       <workItem from="1717390722309" duration="10043000" />
       <workItem from="1717403819006" duration="518000" />
       <workItem from="1717410403366" duration="18680000" />
-      <workItem from="1717482056115" duration="529000" />
+      <workItem from="1717482056115" duration="4531000" />
+      <workItem from="1717493942578" duration="579000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -294,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717482340077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Project cleared">
+      <option name="closed" value="true" />
+      <created>1717482622783</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717482622783</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +322,8 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="Made all backend" />
     <MESSAGE value="Project made" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project made" />
+    <MESSAGE value="Project cleared" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project cleared" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
