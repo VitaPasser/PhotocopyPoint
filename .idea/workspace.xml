@@ -5,36 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project cleared">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/PickUpStationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/RegisterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ПРОГРАМНІ КЛАСИ.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$даток А.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток А.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Б.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток В.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Г.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІС1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІС1.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/AbstractTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/EntryTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/PickUpStation/FixSale.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/PickUpStation/GetOperator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Register/GetPrice.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Register/GetTerm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Register/MakePayment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/TestResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/TicketList/CreateTicket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/TestApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TicketListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TicketListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -308,7 +292,7 @@
       <workItem from="1717410403366" duration="18680000" />
       <workItem from="1717482056115" duration="4531000" />
       <workItem from="1717493942578" duration="579000" />
-      <workItem from="1717514104519" duration="5294000" />
+      <workItem from="1717514104519" duration="5870000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
