@@ -129,7 +129,7 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
-              <mainClass>org.vitapasser.photocopypoint/org.vitapasser.photocopypoint.HelloApplication</mainClass>
+              <mainClass>org.vitapasser.photocopypoint/org.vitapasser.photocopypoint.TestApplication</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
               <jlinkImageName>app</jlinkImageName>

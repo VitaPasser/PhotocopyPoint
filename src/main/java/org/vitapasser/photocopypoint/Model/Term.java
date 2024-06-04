@@ -1,17 +1,22 @@
 package org.vitapasser.photocopypoint.Model;
 
-import java.util.List;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
-public record Term(Integer term) {
+public record Term(Integer value) {
 
-    public static Term getTerm(TypeList typeList, List<Type> types) {
-        return types.stream()
-                .map(type -> new Term(typeList.getTimePerType(type.name()).getValue() * type.count().count()))
-                .reduce((term1, term2) -> new Term(term1.getValue() + term2.getValue()))
-                .orElse(new Term(0));
+    public Term sum(Term term) {
+        return new Term(this.value() + term.value());
     }
 
-    public Integer getValue() {
-        return term;
+    public LocalTime toLocalTime(){
+        return LocalTime.ofSecondOfDay(value);
+    }
+
+    @Override
+    public String toString() {
+        LocalTime time = toLocalTime();
+
+        return time.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
     }
 }

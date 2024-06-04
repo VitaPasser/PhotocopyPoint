@@ -6,7 +6,6 @@ import org.vitapasser.photocopypoint.Test.AbstractTest;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-import java.util.Objects;
 
 public class CreateTicket extends AbstractTest {
     public CreateTicket(Connection connectionToDataBase) {
@@ -20,13 +19,13 @@ public class CreateTicket extends AbstractTest {
         long idOrder = 1;
         long idTicket = ticketList.createTicket(idOrder);
 
-        String sqlCheck = "SELECT `PhotocopyPoint`.`Order`.id\n" +
+        String sqlCheck = "SELECT `PhotocopyPoint`.`Order`.id as OrderId, `PhotocopyPoint`.`Ticket`.id as TicketId\n" +
                 "FROM `PhotocopyPoint`.`Ticket`\n" +
                 "INNER JOIN `PhotocopyPoint`.`Order` " +
                 "on `PhotocopyPoint`.`Order`.`id` = `PhotocopyPoint`.Ticket.order_id\n" +
                 "WHERE `PhotocopyPoint`.`Order`.`id` = "+idOrder+"\n" +
-                "GROUP BY `PhotocopyPoint`.`Order`.id " +
-                "ORDER BY `PhotocopyPoint`.`Order`.id DESC LIMIT 1;";
+                "GROUP BY OrderId, TicketId " +
+                "ORDER BY OrderId, TicketId DESC LIMIT 1;";
 
         try {
             Statement statement = connectionToDataBase.createStatement();
@@ -34,9 +33,12 @@ public class CreateTicket extends AbstractTest {
             ResultSet sqlResult = statement.executeQuery(sqlCheck);
             sqlResult.next();
 
-            long testTicketId = sqlResult.getLong("id");
+            long testOrderId = sqlResult.getLong("OrderId");
+            long testTicketId = sqlResult.getLong("TicketId");
 
-            return Objects.equals(testTicketId, idTicket);
+            boolean testOrder = idOrder == testOrderId;
+            boolean testTicket = testTicketId == idTicket;
+            return testOrder == testTicket;
         } catch (Exception e)
         {
             System.out.println("Error on test 'FixSale': " +e.getMessage());

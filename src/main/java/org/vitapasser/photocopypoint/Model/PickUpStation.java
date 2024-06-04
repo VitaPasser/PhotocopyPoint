@@ -5,7 +5,6 @@ import java.util.Objects;
 
 public record PickUpStation(Connection connectionToDataBase, String address) {
 
-    public record OrderIDOddMoney(long orderID, Money oddMoney){}
 
     /*
      * Через запрос у базу даних отримуються вільний оператор
@@ -51,17 +50,14 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
      * Через запрос у базу даних отправляється замовлення.
      * Також метод рахує здачу. (return null - є заглушка)
      */
-    public OrderIDOddMoney fixSale(Order order, Money countPayMoney) {
+    public OrderIDAndOddMany fixSale(Order order, Money countPayMoney) {
         try {
-
-            StringBuilder sql;
-            PreparedStatement statement;
 
             long idMoney = insertMoney(order);
             long idContactInfo = insertContactInfo(order);
             long idClient = insertClient(idContactInfo);
             long idOrder = insertOrder(idMoney, idClient);
-            order.getTypes().forEach(type -> {
+            order.getTypeItems().forEach(type -> {
                 try {
                     insertTypeServiceOrder(idOrder, type, order.getTerm());
                 } catch (SQLException e) {
@@ -73,10 +69,10 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
             Money oddMoney = null;
             Money orderPrice = order.getPrice();
             if (Objects.equals(orderPrice.unit(), countPayMoney.unit()))
-                oddMoney = new Money(countPayMoney.count() - orderPrice.count(),
+                oddMoney = new Money(countPayMoney.value() - orderPrice.value(),
                         orderPrice.unit());
 
-            return new OrderIDOddMoney(idOrder, oddMoney);
+            return new OrderIDAndOddMany(idOrder, oddMoney);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -99,17 +95,17 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
         getId(statement);
     }
 
-    private void insertTypeServiceOrder(long idOrder, Type type, Term term) throws SQLException {
+    private void insertTypeServiceOrder(long idOrder, TypeItem type, Term term) throws SQLException {
         StringBuilder sql;
         PreparedStatement statement;
         sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.TypeServiceOrder(order_id, term, type_service_id, " +
-                "count) VALUES (?, ADDTIME(NOW(), SEC_TO_TIME(?)), ?, ?);\n");
+                "count) VALUES (?, ADDTIME(NOW(), SEC_TO_TIME(?)), ?, ?);");
         statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
         statement.setLong(1, idOrder);
         //statement.setLong(2, type.);
-        statement.setInt(2, term.getValue());
-        statement.setLong(3, type.id());
-        statement.setInt(4, type.count().count());
+        statement.setInt(2, term.value());
+        statement.setLong(3, type.type().id());
+        statement.setInt(4, type.count());
 
         checkAffectRows(statement.executeUpdate());
         getId(statement);
@@ -157,9 +153,9 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
     private long insertMoney(Order order) throws SQLException {
         StringBuilder sql;
         PreparedStatement statement;
-        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.Money(count, unit) VALUES (?, ?);\n");
+        sql = new StringBuilder("INSERT INTO `PhotocopyPoint`.Money(count, unit) VALUES (?, ?);");
         statement = connectionToDataBase.prepareStatement(sql.toString(), Statement.RETURN_GENERATED_KEYS);
-        statement.setDouble(1, order.getPrice().count());
+        statement.setDouble(1, order.getPrice().value());
         statement.setString(2, order.getPrice().unit());
 
         checkAffectRows(statement.executeUpdate());
@@ -167,7 +163,6 @@ public record PickUpStation(Connection connectionToDataBase, String address) {
     }
 
     private static long getId(PreparedStatement statement) throws SQLException {
-        long id;
         try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
             if (generatedKeys.next()) {
                 return generatedKeys.getLong(1);

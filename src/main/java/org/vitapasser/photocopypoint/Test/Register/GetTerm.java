@@ -1,5 +1,6 @@
 package org.vitapasser.photocopypoint.Test.Register;
 
+import org.vitapasser.photocopypoint.Model.Register;
 import org.vitapasser.photocopypoint.Model.*;
 import org.vitapasser.photocopypoint.Test.AbstractTest;
 
@@ -14,13 +15,11 @@ public class GetTerm extends AbstractTest {
     @Override
     public boolean test() {
         TypeList typeList = new TypeList(connectionToDataBase);
-        PriceList priceList = new PriceList(connectionToDataBase);
         PickUpStation pickUpStation = new PickUpStation(connectionToDataBase,
                 "Київ, вул. Хрещатик, 1");
         TicketList ticketList = new TicketList(connectionToDataBase);
 
-        Register register = new Register(typeList, priceList, pickUpStation,
-                ticketList);
+        Register register = new Register(typeList, pickUpStation, ticketList);
 
         register.newOrder();
         register.addType("Друк", 57);

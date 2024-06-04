@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Order {
 
-    private List<Type> types;
+    private List<TypeItem> typeItems;
     private Term term;
     private Money price;
     private String fullName;
@@ -16,20 +16,26 @@ public class Order {
 
     public static Order create() {
         Order order = new Order();
-        order.types = new ArrayList<Type>();
+        order.typeItems = new ArrayList<>();
         return order;
     }
 
     public void addType(String name, TypeList typeList, int count) {
-        Type type = typeList.addType(name, count);
-        types.add(type);
+        Type type = typeList.getType(name);
+        typeItems.add(new TypeItem(type, count));
     }
-    public Term getTerm(TypeList typeList) {
-        term = Term.getTerm(typeList, types);
+    public Term getTerm() {
+        term = typeItems.stream()
+                .map(TypeItem::getTerm)
+                .reduce(Term::sum)
+                .orElseThrow();
         return term;
     }
-    public Money getPrice(PriceList priceList) {
-        price = Calc.createPrice(priceList, types);
+    public Money getPrice() {
+        price = typeItems.stream()
+                .map(TypeItem::getMoney)
+                .reduce(Money::sum)
+                .orElseThrow();
         return price;
     }
     public Money makePayment(Money countPayMoney,
@@ -41,32 +47,18 @@ public class Order {
         this.phoneNumber = phoneNumber;
         operator = pickUpStation.getOperator();
 
-        PickUpStation.OrderIDOddMoney orderIDOddMoney = pickUpStation.fixSale(this, countPayMoney);
-        assert orderIDOddMoney != null;
-        Money change = orderIDOddMoney.oddMoney();
-        ticketList.createTicket(orderIDOddMoney.orderID());
+        OrderIDAndOddMany OrderIDAndOddMany = pickUpStation.fixSale(this, countPayMoney);
+        assert OrderIDAndOddMany != null;
+        Money change = OrderIDAndOddMany.oddMoney();
+        ticketList.createTicket(OrderIDAndOddMany.orderID());
         return change;
     }
 
     /*
     * Якщо потрібно буде отримати данні замовлення для інших програмних потреб.
     * */
-    public List<Type> getTypes() {
-        return types;
-    }
-
-    public Term getTerm() {
-        if (term == null) {
-            throw new NullPointerException();
-        }
-        return term;
-    }
-
-    public Money getPrice() {
-        if (price == null) {
-            throw new NullPointerException();
-        }
-        return price;
+    public List<TypeItem> getTypeItems() {
+        return typeItems;
     }
 
     public String getFullName() {

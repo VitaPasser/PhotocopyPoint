@@ -5,7 +5,6 @@ import org.vitapasser.photocopypoint.Test.AbstractTest;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Objects;
 
@@ -22,9 +21,8 @@ public class FixSale extends AbstractTest {
 
         TypeList typeList = new TypeList(connectionToDataBase);
         order.addType("Друк", typeList, 3);
-        order.getTerm(typeList);
-        PriceList priceList = new PriceList(connectionToDataBase);
-        order.getPrice(priceList);
+        order.getTerm();
+        order.getPrice();
         String fullName = "ТЕСТДорно ДованоТЕСТ";
         order.setFullName(fullName);
         order.setPhoneNumber("+3809998748904");
@@ -32,10 +30,10 @@ public class FixSale extends AbstractTest {
 
         Money pay = new Money(500.00, "UAH");
 
-        PickUpStation.OrderIDOddMoney orderIDOddMoney = pickUpStation.fixSale(order, pay);
+        OrderIDAndOddMany orderIDOddMoney = pickUpStation.fixSale(order, pay);
         assert orderIDOddMoney != null;
         Money odd_money = orderIDOddMoney.oddMoney();
-        Money odd_money_check = new Money(pay.count() - order.getPrice().count(), pay.unit());
+        Money odd_money_check = new Money(pay.value() - order.getPrice().value(), pay.unit());
 
         Boolean oddMoneyTest = Objects.equals(odd_money, odd_money_check);
 

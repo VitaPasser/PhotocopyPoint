@@ -1,15 +1,17 @@
 package org.vitapasser.photocopypoint.Model;
 
+import org.vitapasser.photocopypoint.Exception.NotExistTypeException;
+
+import java.util.List;
+
 public class Register {
     private Order order;
     private final TypeList typeList;
-    private final PriceList priceList;
     private final PickUpStation pickUpStation;
     private final TicketList ticketList;
 
-    public Register(TypeList typeList, PriceList priceList, PickUpStation pickUpStation, TicketList ticketList) {
+    public Register(TypeList typeList, PickUpStation pickUpStation, TicketList ticketList) {
         this.typeList = typeList;
-        this.priceList = priceList;
         this.pickUpStation = pickUpStation;
         this.ticketList = ticketList;
     }
@@ -18,16 +20,17 @@ public class Register {
         this.order = Order.create();
     }
 
-    public void addType(String name, int count) {
+    public List<TypeItem> addType(String name, int count) {
         order.addType(name, typeList, count);
+        return order.getTypeItems();
     }
 
     public Term getTerm() {
-        return order.getTerm(typeList);
+        return order.getTerm();
     }
 
     public Money getPrice() {
-        return order.getPrice(priceList);
+        return order.getPrice();
     }
 
     public Money makePayment(Money countPayMoney,
@@ -38,5 +41,17 @@ public class Register {
                 phoneNumber,
                 pickUpStation,
                  ticketList);
+    }
+
+    public List<Type> getTypes(String likeNameTickets) throws NotExistTypeException {
+        return typeList.getTypes(likeNameTickets);
+    }
+
+    public List<TypeItem> getOrderTypes() {
+        return order.getTypeItems();
+    }
+
+    public List<Ticket> getAllTickets() {
+        return ticketList.getAllTickets();
     }
 }
