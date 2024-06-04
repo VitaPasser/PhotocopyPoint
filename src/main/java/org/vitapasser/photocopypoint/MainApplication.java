@@ -10,20 +10,13 @@ import org.vitapasser.photocopypoint.Model.PickUpStation;
 import org.vitapasser.photocopypoint.Model.Register;
 import org.vitapasser.photocopypoint.Model.TicketList;
 import org.vitapasser.photocopypoint.Model.TypeList;
-import org.vitapasser.photocopypoint.Test.EntryTests;
 import org.vitapasser.photocopypoint.Util.Mysql;
 
-import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.Objects;
 
 public class MainApplication extends Application {
-
-//    public static Connection getConnection() throws SQLException, IOException{
-//
-//        return Mysql.getConnection();
-//    }
 
     Connection connection;
 
@@ -46,7 +39,7 @@ public class MainApplication extends Application {
 
                 FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
                         MainApplication.class.getResource("order-management.fxml")));
-                Scene scene = new Scene((Parent)FXMLLoader.load());
+                Scene scene = new Scene(FXMLLoader.load());
                 OrderManagementController controller = FXMLLoader.getController();
                 controller.putData(register);
                 stage.setTitle("Hello!");

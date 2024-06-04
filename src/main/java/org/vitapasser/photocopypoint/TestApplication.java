@@ -6,13 +6,7 @@ import org.vitapasser.photocopypoint.Test.EntryTests;
 import org.vitapasser.photocopypoint.Util.Mysql;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.util.Properties;
 
 public class TestApplication extends Application {
 

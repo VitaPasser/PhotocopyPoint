@@ -10,8 +10,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class TicketListTest {
 
     Connection connection = Mysql.getConnection();
@@ -28,7 +26,7 @@ class TicketListTest {
 
         List<Ticket> tickets = register.getAllTickets();
 
-        List<Ticket> ticketReference = new ArrayList<Ticket>();
+        List<Ticket> ticketReference = new ArrayList<>();
 
         ticketReference.add(new Ticket(1, 1, "Друк", false, "Іван Іванов", "+380501234567"));
 

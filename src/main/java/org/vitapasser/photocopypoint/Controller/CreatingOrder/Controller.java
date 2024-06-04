@@ -140,7 +140,7 @@ public class Controller {
     }
 
     private void changeTable(ObservableList<TypeView> list) {
-        List<Type> types = null;
+        List<Type> types;
         nameNameTypeService.setText("Назва послуги");
         addTypeServiceButton.setDisable(false);
         try {
@@ -233,24 +233,24 @@ public class Controller {
             typeViewsListSelectedServices.clear();
 
             idTypeColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-            idTypeColumn1.setCellValueFactory(new PropertyValueFactory<TypeView, Long>("id"));
+            idTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("id"));
 
             nameTypeColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-            nameTypeColumn1.setCellValueFactory(new PropertyValueFactory<TypeView, String>("name"));
+            nameTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("name"));
 
             infoTypeColumn.setCellValueFactory(new PropertyValueFactory<>("info"));
-            infoTypeColumn1.setCellValueFactory(new PropertyValueFactory<TypeView, String>("info"));
+            infoTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("info"));
 
             termTypeColumn.setCellValueFactory(new PropertyValueFactory<>("term"));
-            termTypeColumn1.setCellValueFactory(new PropertyValueFactory<TypeView, String>("term"));
+            termTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("term"));
 
             countMoneyTypeColumn.setCellValueFactory(new PropertyValueFactory<>("countMoney"));
-            countMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<TypeView, Double>("countMoney"));
+            countMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("countMoney"));
 
             currencyMoneyTypeColumn.setCellValueFactory(new PropertyValueFactory<>("currencyMoney"));
-            currencyMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<TypeView, String>("currencyMoney"));
+            currencyMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("currencyMoney"));
 
-            countTypeColumn1.setCellValueFactory(new PropertyValueFactory<TypeView, Integer>("count"));
+            countTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("count"));
 
             changeTable(typeViewsListOfSelectableServices);
             initLoadTackedTable();

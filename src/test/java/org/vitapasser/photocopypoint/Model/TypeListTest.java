@@ -21,14 +21,14 @@ class TypeListTest {
     @Test
     void getTypes(){
         TypeList typeList = new TypeList(connection);
-        List<Type> typesGet = null;
+        List<Type> typesGet;
         try {
             typesGet = typeList.getTypes("д");
         } catch (NotExistTypeException e) {
             throw new RuntimeException(e);
         }
 
-        List<Type> typesReference = new ArrayList<Type>();
+        List<Type> typesReference = new ArrayList<>();
 
         typesReference.add(new Type(5L, "Друк", "Чорно-білий друк",
                         new Term(60), new Money(100.0000, "UAH"), Mysql.dbDateTimeToLocalDateTime("2024-05-27 11:48:27")));

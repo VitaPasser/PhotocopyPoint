@@ -17,7 +17,7 @@ public class TypeList {
 
     public List<Type> getTypes(String likeNameTypes) throws NotExistTypeException {
 
-        List<Type> types = new ArrayList<Type>();
+        List<Type> types = new ArrayList<>();
 
         try {
             String sql = """

@@ -1,8 +1,5 @@
 package org.vitapasser.photocopypoint.Controller.CreatingOrder;
 
-import javafx.beans.property.SimpleDoubleProperty;
-import javafx.beans.property.SimpleLongProperty;
-import javafx.beans.property.SimpleStringProperty;
 import org.vitapasser.photocopypoint.Model.Type;
 import org.vitapasser.photocopypoint.Model.TypeItem;
 
