@@ -5,8 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project cleared">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/PickUpStationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/RegisterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІС1.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІС1.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/AbstractTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/EntryTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/PickUpStation/FixSale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/PickUpStation/GetOperator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Register/GetPrice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Register/GetTerm.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Register/MakePayment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/TestResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Test/TicketList/CreateTicket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/TestApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TicketListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TicketListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +48,8 @@
         <option value="Interface" />
         <option value="FxmlFile" />
         <option value="Record" />
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -52,48 +80,51 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TicketListTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.TicketListTest.getAllTickets.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TypeListTest.addType.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.TypeListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TypeListTest.getTypes.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint/CashierInterface/src/main/java/org/vitapasser/cashierinterface&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.38643068&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint/TestApplication.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "Application.MainApplication.executor": "Run",
+    "Application.TestApplication.executor": "Run",
+    "JUnit.PickUpStationTest.executor": "Run",
+    "JUnit.PickUpStationTest.fixSale.executor": "Run",
+    "JUnit.TicketListTest.createTicket.executor": "Run",
+    "JUnit.TicketListTest.executor": "Debug",
+    "JUnit.TicketListTest.getAllTickets.executor": "Run",
+    "JUnit.TypeListTest.addType.executor": "Debug",
+    "JUnit.TypeListTest.executor": "Run",
+    "JUnit.TypeListTest.getTypes.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "extract.method.default.visibility": "private",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint",
+    "last_opened_file_path": "C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint/CashierInterface/src/main/java/org/vitapasser/cashierinterface",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.38643068",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "two.files.diff.last.used.file": "C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint/TestApplication.java",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription localRun="true" path="C:\Users\vita\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="4efe296a-a72f-4721-9e73-4c3647dd67d2" reportId="PhotocopyPoint/qodana/2024-06-02" />
@@ -133,7 +164,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MainApplication">
+  <component name="RunManager" selected="JUnit.PickUpStationTest">
     <configuration name="MainApplication" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.MainApplication" />
       <module name="PhotocopyPoint" />
@@ -148,10 +179,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Generic SQL Fragment (TypeList.java:499).sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
-      <script-file value="/Generic SQL Fragment (TypeList.java:499).sql" />
-      <script-mode>FILE</script-mode>
-      <method v="2" />
+    <configuration name="PickUpStationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotocopyPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.vitapasser.photocopypoint.Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.vitapasser.photocopypoint.Model" />
+      <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.Model.PickUpStationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PickUpStationTest.fixSale" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotocopyPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.vitapasser.photocopypoint.Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.vitapasser.photocopypoint.Model" />
+      <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.Model.PickUpStationTest" />
+      <option name="METHOD_NAME" value="fixSale" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="TicketListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PhotocopyPoint" />
@@ -165,6 +222,22 @@
       <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.Model.TicketListTest" />
       <option name="METHOD_NAME" value="getAllTickets" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketListTest.createTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PhotocopyPoint" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.vitapasser.photocopypoint.Model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.vitapasser.photocopypoint.Model" />
+      <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.Model.TicketListTest" />
+      <option name="METHOD_NAME" value="createTicket" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -185,54 +258,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TypeListTest.addType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PhotocopyPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.vitapasser.photocopypoint.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.vitapasser.photocopypoint.Model" />
-      <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.Model.TypeListTest" />
-      <option name="METHOD_NAME" value="addType" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TypeListTest.getTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="PhotocopyPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.vitapasser.photocopypoint.Model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.vitapasser.photocopypoint.Model" />
-      <option name="MAIN_CLASS_NAME" value="org.vitapasser.photocopypoint.Model.TypeListTest" />
-      <option name="METHOD_NAME" value="getTypes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.TestApplication" />
       <item itemvalue="Application.MainApplication" />
-      <item itemvalue="Database Script.Generic SQL Fragment (TypeList.java:499).sql" />
+      <item itemvalue="JUnit.PickUpStationTest" />
+      <item itemvalue="JUnit.PickUpStationTest.fixSale" />
+      <item itemvalue="JUnit.TicketListTest.createTicket" />
       <item itemvalue="JUnit.TicketListTest" />
       <item itemvalue="JUnit.TicketListTest.getAllTickets" />
-      <item itemvalue="JUnit.TypeListTest.getTypes" />
-      <item itemvalue="JUnit.TypeListTest.addType" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PickUpStationTest" />
+        <item itemvalue="JUnit.PickUpStationTest.fixSale" />
+        <item itemvalue="JUnit.TicketListTest.createTicket" />
         <item itemvalue="JUnit.TicketListTest" />
         <item itemvalue="JUnit.TicketListTest.getAllTickets" />
-        <item itemvalue="JUnit.TypeListTest.getTypes" />
-        <item itemvalue="JUnit.TypeListTest.addType" />
-        <item itemvalue="Database Script.Generic SQL Fragment (TypeList.java:499).sql" />
       </list>
     </recent_temporary>
   </component>
@@ -267,6 +308,7 @@
       <workItem from="1717410403366" duration="18680000" />
       <workItem from="1717482056115" duration="4531000" />
       <workItem from="1717493942578" duration="579000" />
+      <workItem from="1717514104519" duration="5294000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -300,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717482622783</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Project cleared">
+      <option name="closed" value="true" />
+      <created>1717514150898</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717514150898</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +361,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
