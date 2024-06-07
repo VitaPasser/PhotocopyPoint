@@ -43,8 +43,8 @@ public class Register {
                  ticketList);
     }
 
-    public List<Type> getTypes(String likeNameTickets) throws NotExistTypeException {
-        return typeList.getTypes(likeNameTickets);
+    public List<Type> getTypes(String likeNameTypes) throws NotExistTypeException {
+        return typeList.getTypes(likeNameTypes);
     }
 
     public List<TypeItem> getOrderTypes() {

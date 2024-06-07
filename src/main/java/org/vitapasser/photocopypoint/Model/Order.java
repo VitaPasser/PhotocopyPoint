@@ -32,11 +32,10 @@ public class Order {
         return term;
     }
     public Money getPrice() {
-        price = typeItems.stream()
+        return typeItems.stream()
                 .map(TypeItem::getMoney)
                 .reduce(Money::sum)
                 .orElseThrow();
-        return price;
     }
     public Money makePayment(Money countPayMoney,
                              String fullName,
@@ -47,10 +46,10 @@ public class Order {
         this.phoneNumber = phoneNumber;
         operator = pickUpStation.getOperator();
 
-        OrderIDAndOddMany OrderIDAndOddMany = pickUpStation.fixSale(this, countPayMoney);
-        assert OrderIDAndOddMany != null;
-        Money change = OrderIDAndOddMany.oddMoney();
-        ticketList.createTicket(OrderIDAndOddMany.orderID());
+        OrderIDAndOddMany orderIDAndOddMoney = pickUpStation.fixSale(this, countPayMoney);
+        assert orderIDAndOddMoney != null;
+        Money change = orderIDAndOddMoney.oddMoney();
+        ticketList.createTicket(orderIDAndOddMoney.orderID());
         return change;
     }
 

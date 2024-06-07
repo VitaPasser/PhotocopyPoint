@@ -1,0 +1,26 @@
+@startuml
+
+card "order:Order" as Order
+
+card "orderIDAndOddMoney:OrderIDAndOddMany" as OrderIDAndOddMany
+
+card PaymentController
+
+card "pickUpStation:PickUpStation" as PickUpStation
+
+card "register:Register" as Register
+
+card TicketList
+
+Order --> OrderIDAndOddMany: 1.3:change:=oddMoney() >
+note top on link: За шаблоном Pure Fabrication
+Order --> PickUpStation: 🠷1.1:operator:=getOperator()\n🠷1.2:orderIDAndOddMany:=fixSale(this, countPayMoney)
+note top on link: За шаблоном Information Experts
+Order --> TicketList: 1.4:createTicket(orderIDAndOddMany.orderID()) >
+note top on link: За шаблоном Information Experts
+PaymentController -> Register: makePayment(countPayMoney, fullName, phoneNumber) >
+note top on link: За шаблоном Controller
+Register -> Order: 1:a:=makePayment(countPayMoney, fullName, phoneNumber, pickUpStation, ticketList) >
+    
+
+@enduml

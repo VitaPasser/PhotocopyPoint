@@ -1,0 +1,16 @@
+@startuml
+
+
+
+card Controller
+
+card "order:Order" as Order
+
+card ":Register" as Register
+
+Controller -> Register: getPrice() >
+note top on link: За шаблоном Controller
+Register -> Order: 1.price:=getPrice() >
+
+}
+@enduml
