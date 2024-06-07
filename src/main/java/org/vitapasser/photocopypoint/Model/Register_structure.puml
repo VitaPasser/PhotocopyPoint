@@ -80,23 +80,41 @@ diagram meta data end '/
 digraph g {
     rankdir="TB"
     splines=polyline
-    
 
-'nodes 
-subgraph cluster_1272718558 { 
-   	label=vitapasser
-	labeljust=l
-	fillcolor="#ececec"
+
+
+
+Ticket1917344214[
+	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD ALIGN="LEFT" >(C)Ticket</TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >-   fullName: String </TD></TR>
+<TR><TD ALIGN="LEFT" >-   id: long </TD></TR>
+<TR><TD ALIGN="LEFT" >-   isUsed: boolean </TD></TR>
+<TR><TD ALIGN="LEFT" >-   name: String </TD></TR>
+<TR><TD ALIGN="LEFT" >-   orderId: long </TD></TR>
+<TR><TD ALIGN="LEFT" >-   phoneNumber: String </TD></TR>
+<HR/>
+<TR><TD ALIGN="LEFT" >+ Ticket(id: long, orderId: long, name: String, isUsed: boolean, fullName: String, phoneNumber: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getFullName(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getId(): long</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getIsUsed(): boolean</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getName(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getOrderId(): long</TD></TR>
+<TR><TD ALIGN="LEFT" >+ getPhoneNumber(): String</TD></TR>
+<TR><TD ALIGN="LEFT" >+ hashCode(): int</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setFullName(fullName: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setId(id: long)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setIsUsed(used: boolean)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setName(name: String)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setOrderId(orderId: long)</TD></TR>
+<TR><TD ALIGN="LEFT" >+ setPhoneNumber(phoneNumber: String)</TD></TR>
+</TABLE>>
 	style=filled
-   
-   subgraph cluster_271678553 { 
-   	label=photocopypoint
-	labeljust=l
-	fillcolor="#d8d8d8"
-	style=filled
-   
-
-
+	margin=0
+	shape=plaintext
+	fillcolor="#FFFFFF"
+];
 
 Money1917344214[
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
@@ -169,7 +187,7 @@ OrderIDAndOddMany1917344214[
 <TR><TD ALIGN="LEFT" >(C)OrderIDAndOddMany</TD></TR>
 <HR/>
 <TR><TD ALIGN="LEFT" >-   oddMoney: Money </TD></TR>
-<TR><TD ALIGN="LEFT" >-   orderID: long [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   orderID: long </TD></TR>
 <HR/>
 <TR><TD ALIGN="LEFT" >+ OrderIDAndOddMany(orderID: long, oddMoney: Money)</TD></TR>
 <TR><TD ALIGN="LEFT" >+ oddMoney(): Money</TD></TR>
@@ -252,38 +270,6 @@ Term1917344214[
 	fillcolor="#FFFFFF"
 ];
 
-Ticket1917344214[
-	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
-<TR><TD ALIGN="LEFT" >(C)Ticket</TD></TR>
-<HR/>
-<TR><TD ALIGN="LEFT" >-   fullName: String </TD></TR>
-<TR><TD ALIGN="LEFT" >-   id: long [1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   isUsed: boolean [1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   name: String </TD></TR>
-<TR><TD ALIGN="LEFT" >-   orderId: long [1]</TD></TR>
-<TR><TD ALIGN="LEFT" >-   phoneNumber: String </TD></TR>
-<HR/>
-<TR><TD ALIGN="LEFT" >+ Ticket(id: long, orderId: long, name: String, isUsed: boolean, fullName: String, phoneNumber: String)</TD></TR>
-<TR><TD ALIGN="LEFT" >+ getFullName(): String</TD></TR>
-<TR><TD ALIGN="LEFT" >+ getId(): long</TD></TR>
-<TR><TD ALIGN="LEFT" >+ getIsUsed(): boolean</TD></TR>
-<TR><TD ALIGN="LEFT" >+ getName(): String</TD></TR>
-<TR><TD ALIGN="LEFT" >+ getOrderId(): long</TD></TR>
-<TR><TD ALIGN="LEFT" >+ getPhoneNumber(): String</TD></TR>
-<TR><TD ALIGN="LEFT" >+ hashCode(): int</TD></TR>
-<TR><TD ALIGN="LEFT" >+ setFullName(fullName: String)</TD></TR>
-<TR><TD ALIGN="LEFT" >+ setId(id: long)</TD></TR>
-<TR><TD ALIGN="LEFT" >+ setIsUsed(used: boolean)</TD></TR>
-<TR><TD ALIGN="LEFT" >+ setName(name: String)</TD></TR>
-<TR><TD ALIGN="LEFT" >+ setOrderId(orderId: long)</TD></TR>
-<TR><TD ALIGN="LEFT" >+ setPhoneNumber(phoneNumber: String)</TD></TR>
-</TABLE>>
-	style=filled
-	margin=0
-	shape=plaintext
-	fillcolor="#FFFFFF"
-];
-
 TicketList1917344214[
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)TicketList</TD></TR>
@@ -334,7 +320,7 @@ TypeItem1917344214[
 	label=<<TABLE BORDER="1" CELLBORDER="0" CELLPADDING="4" CELLSPACING="0">
 <TR><TD ALIGN="LEFT" >(C)TypeItem</TD></TR>
 <HR/>
-<TR><TD ALIGN="LEFT" >-   count: int [1]</TD></TR>
+<TR><TD ALIGN="LEFT" >-   count: int </TD></TR>
 <TR><TD ALIGN="LEFT" >-   type: Type </TD></TR>
 <HR/>
 <TR><TD ALIGN="LEFT" >+ TypeItem(type: Type, count: int)</TD></TR>
@@ -364,37 +350,36 @@ TypeList1917344214[
 	shape=plaintext
 	fillcolor="#FFFFFF"
 ];
-} 
-} 
 
 
-Order1917344214 -> Money1917344214[label="price
+Order1917344214 -> Money1917344214[label="Містить
 "];
-Order1917344214 -> Operator1917344214[label="operator
+Order1917344214 -> Operator1917344214[label="Містить
 "];
-Order1917344214 -> Term1917344214[label="term
+Order1917344214 -> Term1917344214[label="Містить
 "];
-Order1917344214 -> TicketList1917344214[label="makePayment() -> createTicket()"];
-Order1917344214 -> TypeItem1917344214[label="typeItems
+Order1917344214 -> TicketList1917344214[label="створює"];
+Order1917344214 -> TypeItem1917344214[label="містить
 "];
-Order1917344214 -> TypeList1917344214[label="addType() -> getType()"];
-PickUpStation1917344214 -> OrderIDAndOddMany1917344214[label="fixSale() -> OrderIDAndOddMany()"];
-PickUpStation1917344214 -> Term1917344214[label="insertTypeServiceOrder() -> value()"];
-PickUpStation1917344214 -> Type1917344214[label="insertTypeServiceOrder() -> id()"];
+Order1917344214 -> TypeList1917344214[label="вимогає"];
+PickUpStation1917344214 -> OrderIDAndOddMany1917344214[label="повертає"];
+PickUpStation1917344214 -> Term1917344214[label="вимогає"];
+PickUpStation1917344214 -> Type1917344214[label="вимогає"];
 Register1917344214 -> Order1917344214[label="Оброблює
 "];
-Register1917344214 -> PickUpStation1917344214[label="pickUpStation
+Register1917344214 -> PickUpStation1917344214[label="Містить
 "];
-Register1917344214 -> TicketList1917344214[label="ticketList
+Register1917344214 -> TicketList1917344214[label="Містить
 "];
-Register1917344214 -> TypeList1917344214[label="typeList
+Register1917344214 -> TypeList1917344214[label="Містить
 "];
-TicketList1917344214 -> Ticket1917344214[label="getTickets() -> Ticket()"];
-Type1917344214 -> Money1917344214[label="money
+Type1917344214 -> Money1917344214[label="містить
 "];
-Type1917344214 -> Term1917344214[label="term
+Type1917344214 -> Term1917344214[label="містить
 "];
-TypeItem1917344214 -> Type1917344214[label="type
+TypeItem1917344214 -> Type1917344214[label="містить
+"];
+TicketList1917344214 -> Ticket1917344214[label="повертає
 "];
     
 }

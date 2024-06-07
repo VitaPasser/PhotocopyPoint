@@ -1,0 +1,15 @@
+@startuml precedents
+
+actor Продавець
+actor Оператор
+
+rectangle "Пункт ксерокопії" {
+usecase "Замовлення послуги" as UC1
+usecase "Отримання послуги" as UC2
+usecase "Виконання послуги" as UC3
+}
+
+:Продавець: --> UC1
+:Продавець: --> UC2
+:Оператор: --> UC3
+@enduml

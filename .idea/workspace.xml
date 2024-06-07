@@ -5,43 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project cleared">
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ ВИСНОВКИ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ ВСТУП.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ СПИСОК ЛІТЕРАТУРИ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ДІАГРАМИ ВЗАЄМОДІЇ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ЗАПИТИ ДО БАЗИ ДАНИХ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ЗМІСТ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$МОДЕЛЬ ДАНИХ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ОТАЦІЯ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ПРОГРАМНІ КЛАСИ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$ТЕСТУВАННЯ.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$даток А.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$даток Б.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$даток В.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/~$даток Г.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_0_Register_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_1_newOrder_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_2_addType_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_3_getTerm_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_4_getPrice_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_5_makePayment_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_6_getTypes_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_7_getOrderTypes_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_8_getAllTickets_calls.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_structure.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/diagrams/precedents/precedents.plantuml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/Курсова АС-221 Воробйов В.П..pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток А.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток А.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Б.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Б.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток В.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток В.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Г.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Г.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІСТ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІСТ.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_structure.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_structure.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,7 +305,7 @@
       <workItem from="1717514104519" duration="10517000" />
       <workItem from="1717579570446" duration="10507000" />
       <workItem from="1717622630288" duration="189000" />
-      <workItem from="1717746778566" duration="3243000" />
+      <workItem from="1717746778566" duration="5337000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
