@@ -6,7 +6,7 @@ public final class Ticket {
     private long id;
     private long orderId;
     private String name;
-    private boolean isUsed;
+    private boolean isReady;
     private String fullName;
     private String phoneNumber;
 
@@ -34,12 +34,12 @@ public final class Ticket {
         this.name = name;
     }
 
-    public boolean getIsUsed() {
-        return isUsed;
+    public boolean getIsReady() {
+        return isReady;
     }
 
-    public void setIsUsed(boolean used) {
-        isUsed = used;
+    public void setIsReady(boolean ready) {
+        isReady = ready;
     }
 
     public String getFullName() {
@@ -61,13 +61,13 @@ public final class Ticket {
     public Ticket(long id,
                   long orderId,
                   String name,
-                  boolean isUsed,
+                  boolean isReady,
                   String fullName,
                   String phoneNumber) {
         this.id = id;
         this.orderId = orderId;
         this.name = name;
-        this.isUsed = isUsed;
+        this.isReady = isReady;
         this.fullName = fullName;
         this.phoneNumber = phoneNumber;
     }
@@ -82,14 +82,14 @@ public final class Ticket {
         return this.id == that.id &&
                this.orderId == that.orderId &&
                Objects.equals(this.name, that.name) &&
-               this.isUsed == that.isUsed &&
+               this.isReady == that.isReady &&
                Objects.equals(this.fullName, that.fullName) &&
                Objects.equals(this.phoneNumber, that.phoneNumber);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, orderId, name, isUsed, fullName, phoneNumber);
+        return Objects.hash(id, orderId, name, isReady, fullName, phoneNumber);
     }
 
     @Override
@@ -98,7 +98,7 @@ public final class Ticket {
                "id=" + id + ", " +
                "orderId=" + orderId + ", " +
                "name=" + name + ", " +
-               "isUsed=" + isUsed + ", " +
+               "isReady=" + isReady + ", " +
                "fullName=" + fullName + ", " +
                "phoneNumber=" + phoneNumber + ']';
     }

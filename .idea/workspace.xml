@@ -5,28 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project cleared">
-      <change afterPath="$PROJECT_DIR$/Documentation/diagrams/precedents/precedents.plantuml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/Курсова АС-221 Воробйов В.П..pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/~$рсова АС-221 Воробйов В.П..docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeOrdersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/org/vitapasser/photocopypoint/take-orders.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/1 ВСТУП.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/10 ВИСНОВКИ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/11 СПИСОК ЛІТЕРАТУРИ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/2 ВИЗНАЧЕННЯ ВИМОГ ДО ПРОГРАМНОЇ СИСТЕМИ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/3 МОДЕЛЬ КОНЦЕПТУАЛЬНИХ КЛАСІВ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/4 ДІАГРАМИ ВЗАЄМОДІЇ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/5 МОДЕЛЬ ДАНИХ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/6 ДІАГРАМИ ПРОГРАМНИХ КЛАСІВ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/7 ПРОГРАМНІ КЛАСИ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/8 ЗАПИТИ ДО БАЗИ ДАНИХ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/9 ТЕСТУВАННЯ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/АНОТАЦІЯ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток А.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток А.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Б.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Б.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток В.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток В.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Г.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Додаток Г.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІСТ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/ЗМІСТ.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Супровід курсач/Курсова АС-221 Воробйов В.П..docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_structure.puml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_structure.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagementController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagementController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_0_Register_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_1_newOrder_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_2_addType_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_3_getTerm_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_4_getPrice_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_5_makePayment_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_6_getTypes_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_7_getOrderTypes_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_8_getAllTickets_calls.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Register_structure.puml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TicketList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TicketList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/org/vitapasser/photocopypoint/order-management.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/vitapasser/photocopypoint/order-management.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +38,11 @@
       <list>
         <option value="JavaFXApplication" />
         <option value="Interface" />
-        <option value="FxmlFile" />
         <option value="Record" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="UML Sequence" />
+        <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,52 +73,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MainApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.TestApplication.executor&quot;: &quot;Run&quot;,
-    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Sequence&quot;,
-    &quot;JUnit.PickUpStationTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.PickUpStationTest.fixSale.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TicketListTest.createTicket.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TicketListTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.TicketListTest.getAllTickets.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TypeListTest.addType.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.TypeListTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TypeListTest.getTypes.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint/Model&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.38643068&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint/TestApplication.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HelloApplication.executor": "Run",
+    "Application.MainApplication.executor": "Run",
+    "Application.TestApplication.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "JUnit.PickUpStationTest.executor": "Run",
+    "JUnit.PickUpStationTest.fixSale.executor": "Run",
+    "JUnit.TicketListTest.createTicket.executor": "Run",
+    "JUnit.TicketListTest.executor": "Run",
+    "JUnit.TicketListTest.getAllTickets.executor": "Run",
+    "JUnit.TypeListTest.addType.executor": "Debug",
+    "JUnit.TypeListTest.executor": "Run",
+    "JUnit.TypeListTest.getTypes.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "extract.method.default.visibility": "private",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "21",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint",
+    "last_opened_file_path": "C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint/Model",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.38643068",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "two.files.diff.last.used.file": "C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint/TestApplication.java",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="QodanaReportsService">
     <option name="descriptions">
       <ReportDescription localRun="true" path="C:\Users\vita\AppData\Local\Temp\qodana_output\qodana.sarif.json" reportGuid="4efe296a-a72f-4721-9e73-4c3647dd67d2" reportId="PhotocopyPoint/qodana/2024-06-02" />
@@ -154,7 +154,7 @@
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
-        <option value="Application" />
+        <option value="JUnit" />
       </set>
     </option>
   </component>
@@ -263,11 +263,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PickUpStationTest" />
-        <item itemvalue="JUnit.PickUpStationTest.fixSale" />
-        <item itemvalue="JUnit.TicketListTest.createTicket" />
-        <item itemvalue="JUnit.TicketListTest" />
         <item itemvalue="JUnit.TicketListTest.getAllTickets" />
+        <item itemvalue="JUnit.TicketListTest" />
+        <item itemvalue="JUnit.TicketListTest.createTicket" />
+        <item itemvalue="JUnit.PickUpStationTest.fixSale" />
+        <item itemvalue="JUnit.PickUpStationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -306,6 +306,7 @@
       <workItem from="1717579570446" duration="10507000" />
       <workItem from="1717622630288" duration="189000" />
       <workItem from="1717746778566" duration="5337000" />
+      <workItem from="1717777282266" duration="4580000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -390,6 +391,11 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TypeListTest.java</url>
           <line>48</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/PickUpStation.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

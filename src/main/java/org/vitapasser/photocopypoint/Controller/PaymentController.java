@@ -148,7 +148,7 @@ public class PaymentController {
 
             phoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
 
-            isReadyColumn.setCellValueFactory(new PropertyValueFactory<>("isUsed"));
+            isReadyColumn.setCellValueFactory(new PropertyValueFactory<>("isReady"));
 
             namesTypeServiceColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 

@@ -54,4 +54,8 @@ public class Register {
     public List<Ticket> getAllTickets() {
         return ticketList.getAllTickets();
     }
+
+    public List<Ticket> getAllMadeTickets() {
+        return ticketList.getAllMadeTickets();
+    }
 }
