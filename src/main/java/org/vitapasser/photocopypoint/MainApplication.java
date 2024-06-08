@@ -4,11 +4,8 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import org.vitapasser.photocopypoint.Controller.OrderManagementController;
-import org.vitapasser.photocopypoint.Model.PickUpStation;
-import org.vitapasser.photocopypoint.Model.Register;
-import org.vitapasser.photocopypoint.Model.TicketList;
-import org.vitapasser.photocopypoint.Model.TypeList;
+import org.vitapasser.photocopypoint.Controller.OrderManagement.Controller;
+import org.vitapasser.photocopypoint.Model.*;
 import org.vitapasser.photocopypoint.Util.Mysql;
 
 import java.sql.Connection;
@@ -33,13 +30,14 @@ public class MainApplication extends Application {
                 PickUpStation pickUpStation = new PickUpStation(connection,
                         "Київ, вул. Хрещатик, 1");
                 TicketList ticketList = new TicketList(connection);
+                OrderList orderList = new OrderList(connection);
 
-                Register register = new Register(typeList, pickUpStation, ticketList);
+                Register register = new Register(typeList, pickUpStation, ticketList, orderList);
 
                 FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
                         MainApplication.class.getResource("order-management.fxml")));
                 Scene scene = new Scene(FXMLLoader.load());
-                OrderManagementController controller = FXMLLoader.getController();
+                Controller controller = FXMLLoader.getController();
                 controller.putData(register);
                 stage.setTitle("Hello!");
                 stage.setScene(scene);

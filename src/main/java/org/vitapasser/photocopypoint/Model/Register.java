@@ -1,5 +1,6 @@
 package org.vitapasser.photocopypoint.Model;
 
+import org.vitapasser.photocopypoint.Controller.DTO.OrderView;
 import org.vitapasser.photocopypoint.Exception.NotExistTypeException;
 
 import java.util.List;
@@ -9,11 +10,13 @@ public class Register {
     private final TypeList typeList;
     private final PickUpStation pickUpStation;
     private final TicketList ticketList;
+    private final OrderList orderList;
 
-    public Register(TypeList typeList, PickUpStation pickUpStation, TicketList ticketList) {
+    public Register(TypeList typeList, PickUpStation pickUpStation, TicketList ticketList, OrderList orderList) {
         this.typeList = typeList;
         this.pickUpStation = pickUpStation;
         this.ticketList = ticketList;
+        this.orderList = orderList;
     }
 
     public void newOrder() {
@@ -57,5 +60,9 @@ public class Register {
 
     public List<Ticket> getAllMadeTickets() {
         return ticketList.getAllMadeTickets();
+    }
+
+    public OrderView getFullInfoAboutOrder(long id) {
+        return orderList.getFullInfoAboutOrder(id);
     }
 }

@@ -24,8 +24,9 @@ class RegisterTest {
         PickUpStation pickUpStation = new PickUpStation(connection,
                 "Київ, вул. Хрещатик, 1");
         TicketList ticketList = new TicketList(connection);
+        OrderList orderList = new OrderList(connection);
 
-        Register register = new Register(typeList, pickUpStation, ticketList);
+        Register register = new Register(typeList, pickUpStation, ticketList, orderList);
 
         register.newOrder();
         register.addType("Друк", 57);
@@ -42,8 +43,9 @@ class RegisterTest {
         PickUpStation pickUpStation = new PickUpStation(connection,
                 "Київ, вул. Хрещатик, 1");
         TicketList ticketList = new TicketList(connection);
+        OrderList orderList = new OrderList(connection);
 
-        Register register = new Register(typeList, pickUpStation, ticketList);
+        Register register = new Register(typeList, pickUpStation, ticketList, orderList);
 
         register.newOrder();
         register.addType("Друк", 57);
@@ -60,8 +62,9 @@ class RegisterTest {
         PickUpStation pickUpStation = new PickUpStation(connection,
                 "Київ, вул. Хрещатик, 1");
         TicketList ticketList = new TicketList(connection);
+        OrderList orderList = new OrderList(connection);
 
-        Register register = new Register(typeList, pickUpStation, ticketList);
+        Register register = new Register(typeList, pickUpStation, ticketList, orderList);
 
         register.newOrder();
         register.addType("Друк", 57);

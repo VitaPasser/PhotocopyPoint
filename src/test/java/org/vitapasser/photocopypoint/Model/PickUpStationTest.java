@@ -11,8 +11,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Objects;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class PickUpStationTest {
 
     Connection connection = Mysql.getConnection();

@@ -15,8 +15,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import org.vitapasser.photocopypoint.Controller.OrderManagementController;
 import org.vitapasser.photocopypoint.Controller.PaymentController;
+import org.vitapasser.photocopypoint.Controller.DTO.TypeView;
 import org.vitapasser.photocopypoint.Exception.NotExistTypeException;
 import org.vitapasser.photocopypoint.MainApplication;
 import org.vitapasser.photocopypoint.Model.Register;
@@ -124,7 +124,7 @@ public class Controller {
     protected void onGetNameTypeServiceTableView(MouseEvent event) {
         TypeView typeView = listOfSelectableServices.getSelectionModel().getSelectedItem();
         if (typeView == null) return;
-        nameTypeService.setText(typeView.name);
+        nameTypeService.setText(typeView.getName());
     }
 
     @FXML
@@ -219,7 +219,7 @@ public class Controller {
         FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
                 MainApplication.class.getResource("order-management.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
-        OrderManagementController controller = FXMLLoader.getController();
+        org.vitapasser.photocopypoint.Controller.OrderManagement.Controller controller = FXMLLoader.getController();
         controller.putData(register);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);

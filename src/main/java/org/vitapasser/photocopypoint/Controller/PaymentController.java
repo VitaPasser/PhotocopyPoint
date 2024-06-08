@@ -12,7 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import org.vitapasser.photocopypoint.Controller.CreatingOrder.Controller;
+import org.vitapasser.photocopypoint.Controller.OrderManagement.Controller;
 import org.vitapasser.photocopypoint.MainApplication;
 import org.vitapasser.photocopypoint.Model.Money;
 import org.vitapasser.photocopypoint.Model.Register;
@@ -107,7 +107,7 @@ public class PaymentController {
         FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
                 MainApplication.class.getResource("order-management.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
-        OrderManagementController controller = FXMLLoader.getController();
+        Controller controller = FXMLLoader.getController();
         controller.putData(register);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
@@ -120,7 +120,7 @@ public class PaymentController {
         FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
                 MainApplication.class.getResource("creating-order.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
-        Controller controller = FXMLLoader.getController();
+        org.vitapasser.photocopypoint.Controller.CreatingOrder.Controller controller = FXMLLoader.getController();
         controller.putData(register);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);

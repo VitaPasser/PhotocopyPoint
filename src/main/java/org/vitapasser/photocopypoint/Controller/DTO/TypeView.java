@@ -1,4 +1,4 @@
-package org.vitapasser.photocopypoint.Controller.CreatingOrder;
+package org.vitapasser.photocopypoint.Controller.DTO;
 
 import org.vitapasser.photocopypoint.Model.Type;
 import org.vitapasser.photocopypoint.Model.TypeItem;

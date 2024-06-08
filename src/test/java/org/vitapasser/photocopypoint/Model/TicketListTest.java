@@ -24,7 +24,8 @@ class TicketListTest {
         TypeList typeList = new TypeList(connection);
         PickUpStation pickUpStation = new PickUpStation(connection,"Київ, вул. Хрещатик, 1");
         TicketList ticketList = new TicketList(connection);
-        Register register = new Register(typeList, pickUpStation, ticketList);
+        OrderList orderList = new OrderList(connection);
+        Register register = new Register(typeList, pickUpStation, ticketList, orderList);
 
         List<Ticket> tickets = register.getAllTickets();
 
