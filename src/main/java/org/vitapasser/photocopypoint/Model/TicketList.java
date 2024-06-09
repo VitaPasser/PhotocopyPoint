@@ -6,6 +6,42 @@ import java.util.List;
 
 public record TicketList(Connection connectionToDataBase) {
 
+    public void setEndOrderTicket(long id) {
+        try {
+            String sql = """
+                    UPDATE PhotocopyPoint.Ticket PT
+                    SET PT.is_done = TRUE
+                    WHERE PT.id = ?;""";
+
+            PreparedStatement statement = connectionToDataBase.prepareStatement(sql);
+            statement.setLong(1, id);
+
+            checkAffectRows(statement.executeUpdate());
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
+    public void setMadeOrderTicket(long id) {
+        try {
+            String sql = """
+                    UPDATE PhotocopyPoint.Ticket PT
+                    SET PT.isReady = TRUE
+                    WHERE PT.id = ?;""";
+
+            PreparedStatement statement = connectionToDataBase.prepareStatement(sql);
+            statement.setLong(1, id);
+
+            checkAffectRows(statement.executeUpdate());
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+    }
+
     public List<Ticket> getAllTickets() {
         try {
             String sql = """
@@ -13,6 +49,7 @@ public record TicketList(Connection connectionToDataBase) {
                            PT.order_id,
                            GROUP_CONCAT(TS.name SEPARATOR ', ') AS all_names,
                            PT.isReady,
+                           PT.is_done,
                            Ci.full_name,
                            Ci.phone_number
                     FROM PhotocopyPoint.Ticket PT
@@ -46,6 +83,7 @@ public record TicketList(Connection connectionToDataBase) {
                            PT.order_id,
                            GROUP_CONCAT(TS.name SEPARATOR ', ') AS all_names,
                            PT.isReady,
+                           PT.is_done,
                            Ci.full_name,
                            Ci.phone_number
                     FROM PhotocopyPoint.Ticket PT
@@ -54,12 +92,51 @@ public record TicketList(Connection connectionToDataBase) {
                              INNER JOIN PhotocopyPoint.Contact_info Ci ON C.contact_info_id = Ci.id
                              INNER JOIN PhotocopyPoint.TypeServiceOrder TSO ON PO.id = TSO.order_id
                              INNER JOIN PhotocopyPoint.TypeService TS ON TSO.type_service_id = TS.id
-                    where PT.isReady = TRUE
-                    GROUP BY PT.id, PT.order_id, PT.isReady, Ci.full_name, Ci.phone_number
+                    where PT.isReady = TRUE and PT.is_done = FALSE
+                    GROUP BY PT.id, PT.order_id, PT.isReady, PT.is_done, Ci.full_name, Ci.phone_number
                     ORDER BY PT.id ASC;
                     """;
 
             PreparedStatement statement = connectionToDataBase.prepareStatement(sql);
+
+            statement.executeQuery();
+
+            return getTickets(statement);
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        return null;
+
+    }
+
+    public List<Ticket> getAllNotMadeTickets(String fullNameStaff) {
+        try {
+            String sql = """
+                    SELECT PT.id,
+                           PT.order_id,
+                           GROUP_CONCAT(TS.name SEPARATOR ', ') AS all_names,
+                           PT.isReady,
+                           PT.is_done,
+                           Ci.full_name,
+                           Ci.phone_number
+                    FROM PhotocopyPoint.Ticket PT
+                             INNER JOIN PhotocopyPoint.`Order` PO ON PO.id = PT.order_id
+                             INNER JOIN PhotocopyPoint.Client C ON PO.client_id = C.id
+                             INNER JOIN PhotocopyPoint.Contact_info Ci ON C.contact_info_id = Ci.id
+                             INNER JOIN PhotocopyPoint.TypeServiceOrder TSO ON PO.id = TSO.order_id
+                             INNER JOIN PhotocopyPoint.TypeService TS ON TSO.type_service_id = TS.id
+                             inner join PhotocopyPoint.OrderStaff OS on PO.id = OS.order_id
+                             inner join PhotocopyPoint.Staff S on OS.staff_id = S.id
+                             inner join (select SCI.full_name, SCI.id from PhotocopyPoint.Contact_info SCI) as SCI on SCI.id = S.contact_info_id
+                    where PT.isReady = FALSE and PT.is_done = FALSE and SCI.full_name = ?
+                    GROUP BY PT.id, PT.order_id, PT.isReady, PT.is_done, Ci.full_name, Ci.phone_number
+                    ORDER BY PT.id ASC;
+                    """;
+
+            PreparedStatement statement = connectionToDataBase.prepareStatement(sql);
+            statement.setString(1, fullNameStaff);
 
             statement.executeQuery();
 
@@ -83,6 +160,7 @@ public record TicketList(Connection connectionToDataBase) {
                     resultSet.getLong("order_id"),
                     resultSet.getString("all_names"),
                     resultSet.getBoolean("isReady"),
+                    resultSet.getBoolean("is_done"),
                     resultSet.getString("full_name"),
                     resultSet.getString("phone_number")));
         }

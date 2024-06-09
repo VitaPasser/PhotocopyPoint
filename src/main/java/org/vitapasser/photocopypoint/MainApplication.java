@@ -39,7 +39,7 @@ public class MainApplication extends Application {
                 Scene scene = new Scene(FXMLLoader.load());
                 Controller controller = FXMLLoader.getController();
                 controller.putData(register);
-                stage.setTitle("Hello!");
+                stage.setTitle("Менеждер замовлень");
                 stage.setScene(scene);
                 stage.show();
 

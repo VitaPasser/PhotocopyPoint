@@ -1,7 +1,7 @@
 package org.vitapasser.photocopypoint.Model;
 
 import org.vitapasser.photocopypoint.Controller.DTO.OrderView;
-import org.vitapasser.photocopypoint.Controller.DTO.TypeView;
+import org.vitapasser.photocopypoint.Controller.TakeMoreInfo.TypeView;
 
 import java.util.List;
 

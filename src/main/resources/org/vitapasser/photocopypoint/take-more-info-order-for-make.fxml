@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.vitapasser.photocopypoint.Controller.TakeMoreInfo.Controller">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.vitapasser.photocopypoint.Controller.TakeMoreInfoForMake.Controller">
 <right>
     <BorderPane prefWidth="339.0" BorderPane.alignment="CENTER">
         <center>
@@ -22,8 +22,8 @@
                 <children>
                     <VBox fx:id="oddPayVBox" alignment="TOP_CENTER" layoutX="10.0" layoutY="92.0" spacing="10.0">
                         <children>
-                            <Button mnemonicParsing="false" onAction="#onSetGiveTheOrderButtonClick" prefWidth="200.0" text="Віддати замовлення" />
-                        <Button mnemonicParsing="false" onAction="#onOrderManagementButtonClick" prefWidth="200.0" text="Повернутися до меню" />
+                            <Button mnemonicParsing="false" onAction="#onSetGiveTheOrderButtonClick" prefWidth="200.0" text="Замовлення виконано" />
+                        <Button mnemonicParsing="false" onAction="#onTakeOrderButtonClick" prefWidth="200.0" text="Повернутися до меню" />
                         </children>
                     </VBox>
                 </children>

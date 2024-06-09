@@ -7,8 +7,19 @@ public final class Ticket {
     private long orderId;
     private String name;
     private boolean isReady;
+    private boolean isDone;
     private String fullName;
     private String phoneNumber;
+
+    public Ticket(long id, long orderId, String name, boolean isReady, boolean isDone, String fullName, String phoneNumber) {
+        this.id = id;
+        this.orderId = orderId;
+        this.name = name;
+        this.isReady = isReady;
+        this.isDone = isDone;
+        this.fullName = fullName;
+        this.phoneNumber = phoneNumber;
+    }
 
     public long getId() {
         return id;
@@ -42,6 +53,14 @@ public final class Ticket {
         isReady = ready;
     }
 
+    public boolean getIsDone() {
+        return isDone;
+    }
+
+    public void setIsDone(boolean done) {
+        isDone = done;
+    }
+
     public String getFullName() {
         return fullName;
     }
@@ -56,50 +75,5 @@ public final class Ticket {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-    }
-
-    public Ticket(long id,
-                  long orderId,
-                  String name,
-                  boolean isReady,
-                  String fullName,
-                  String phoneNumber) {
-        this.id = id;
-        this.orderId = orderId;
-        this.name = name;
-        this.isReady = isReady;
-        this.fullName = fullName;
-        this.phoneNumber = phoneNumber;
-    }
-
-
-
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == this) return true;
-        if (obj == null || obj.getClass() != this.getClass()) return false;
-        var that = (Ticket) obj;
-        return this.id == that.id &&
-               this.orderId == that.orderId &&
-               Objects.equals(this.name, that.name) &&
-               this.isReady == that.isReady &&
-               Objects.equals(this.fullName, that.fullName) &&
-               Objects.equals(this.phoneNumber, that.phoneNumber);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, orderId, name, isReady, fullName, phoneNumber);
-    }
-
-    @Override
-    public String toString() {
-        return "Ticket[" +
-               "id=" + id + ", " +
-               "orderId=" + orderId + ", " +
-               "name=" + name + ", " +
-               "isReady=" + isReady + ", " +
-               "fullName=" + fullName + ", " +
-               "phoneNumber=" + phoneNumber + ']';
     }
 }

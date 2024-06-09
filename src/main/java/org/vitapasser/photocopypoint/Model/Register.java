@@ -62,7 +62,19 @@ public class Register {
         return ticketList.getAllMadeTickets();
     }
 
-    public OrderView getFullInfoAboutOrder(long id) {
-        return orderList.getFullInfoAboutOrder(id);
+    public OrderViewAndTypesViews getFullInfoAboutOrder(long TicketId) {
+        return orderList.getFullInfoAboutOrder(TicketId);
+    }
+
+    public void giveTheOrder(long TicketId) {
+        ticketList.setEndOrderTicket(TicketId);
+    }
+
+    public void madeTheOrder(long TicketId) {
+        ticketList.setMadeOrderTicket(TicketId);
+    }
+
+    public List<Ticket> getAllNotMadeTickets(String fullNameStaff) {
+        return ticketList.getAllNotMadeTickets(fullNameStaff);
     }
 }

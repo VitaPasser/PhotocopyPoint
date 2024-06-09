@@ -179,10 +179,6 @@ public class Controller {
     }
 
     @FXML
-    protected void onCancelTypeServiceButtonClick(ActionEvent event) {
-    }
-
-    @FXML
     protected void onWriteNamePhoneNumber(KeyEvent event) {
         if (!phoneNumberClient.getText().matches("^(\\+\\d{1,3}\\s?)?1?\\-?\\.?\\s?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$")){
             phoneNumberLabel.setText("Номер телефону клієнта| Помилковий вираз!");
@@ -212,6 +208,7 @@ public class Controller {
         controller.putData(register, nameClient.getText(), phoneNumberClient.getText());
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
+        stage.setTitle("Оплата замовлення");
         stage.show();
     }
     @FXML
@@ -223,6 +220,7 @@ public class Controller {
         controller.putData(register);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
+        stage.setTitle("Менеждер замовлень");
         stage.show();
     }
     public void initialize() {

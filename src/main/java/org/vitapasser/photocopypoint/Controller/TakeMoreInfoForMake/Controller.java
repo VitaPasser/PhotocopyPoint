@@ -1,4 +1,4 @@
-package org.vitapasser.photocopypoint.Controller.TakeMoreInfo;
+package org.vitapasser.photocopypoint.Controller.TakeMoreInfoForMake;
 
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -8,22 +8,24 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import org.vitapasser.photocopypoint.Controller.TakeMoreInfo.TypeView;
 import org.vitapasser.photocopypoint.MainApplication;
 import org.vitapasser.photocopypoint.Model.OrderViewAndTypesViews;
 import org.vitapasser.photocopypoint.Model.Register;
 
 import java.io.IOException;
 import java.util.Objects;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Controller {
     private Register register;
     OrderViewAndTypesViews orderView;
     private long OrderID;
+    private String fullNameStaff;
     private ObservableList<String> orderItems = FXCollections.observableArrayList();
     private ObservableList<TypeView> typeServices = FXCollections.observableArrayList();
 
@@ -53,7 +55,7 @@ public class Controller {
 
     @FXML
     protected void onSetGiveTheOrderButtonClick(ActionEvent event) throws IOException {
-        register.giveTheOrder(orderView.orderView().idTicket());
+        register.madeTheOrder(orderView.orderView().idTicket());
         FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
                 MainApplication.class.getResource("order-management.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
@@ -66,15 +68,15 @@ public class Controller {
     }
 
     @FXML
-    protected void onOrderManagementButtonClick(ActionEvent event) throws IOException {
+    protected void onTakeOrderButtonClick(ActionEvent event) throws IOException {
         FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
-                MainApplication.class.getResource("order-management.fxml")));
+                MainApplication.class.getResource("take-orders.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
-        org.vitapasser.photocopypoint.Controller.OrderManagement.Controller controller = FXMLLoader.getController();
-        controller.putData(register);
+        org.vitapasser.photocopypoint.Controller.TakeOrders.Controller controller = FXMLLoader.getController();
+        controller.putData(register, fullNameStaff);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("Менеждер замовлень");
+        stage.setTitle("Виконання існуючого замовлення");
         stage.show();
     }
     public void initialize() {
@@ -110,8 +112,9 @@ public class Controller {
             typeTableView.setItems(typeServices);
         });
     }
-    public void putData(Register register, long OrderID) {
+    public void putData(Register register, long OrderID, String fullNameStaff) {
         this.register = register;
         this.OrderID = OrderID;
+        this.fullNameStaff = fullNameStaff;
     }
 }

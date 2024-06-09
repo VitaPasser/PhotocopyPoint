@@ -111,6 +111,7 @@ public class PaymentController {
         controller.putData(register);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
+        stage.setTitle("Створення нового замовлення");
         stage.show();
     }
 
@@ -124,6 +125,7 @@ public class PaymentController {
         controller.putData(register);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
+        stage.setTitle("Менеждер замовлень");
         stage.show();
     }
 

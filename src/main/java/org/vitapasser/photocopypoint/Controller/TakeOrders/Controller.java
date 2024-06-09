@@ -1,4 +1,4 @@
-package org.vitapasser.photocopypoint.Controller.OrderManagement;
+package org.vitapasser.photocopypoint.Controller.TakeOrders;
 
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
@@ -8,8 +8,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import org.vitapasser.photocopypoint.MainApplication;
@@ -23,10 +25,10 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class Controller {
-
     ObservableList<Ticket> ticketsList = FXCollections.observableArrayList();
 
     private Register register;
+    private String fullNameStaff = "";
 
 
     @FXML
@@ -36,7 +38,7 @@ public class Controller {
         try {
             while (!Thread.currentThread().isInterrupted()) {
                 int index = listOfTicketsTableView.getSelectionModel().getFocusedIndex();
-                List<Ticket> tickets = register.getAllMadeTickets();
+                List<Ticket> tickets = register.getAllNotMadeTickets(fullNameStaff);
                 ticketsList.clear();
                 ticketsList.addAll(tickets);
                 listOfTicketsTableView.getSelectionModel().select(index);
@@ -64,57 +66,59 @@ public class Controller {
 
     @FXML
     private TableColumn<Ticket, String> phoneNumberColumn;
-    private String fullNameStaff = "";
 
     @FXML
-    protected void onStartCreateOrderButtonClick(ActionEvent event) throws IOException {
-        register.newOrder();
+    private TextField fullNameTextField;
+
+    @FXML
+    private Button takeMakeOrderButton;
+
+    @FXML
+    protected void onTakeMakeOrderButtonClick(ActionEvent event) throws IOException {
+        if (ticketsList.isEmpty() || Objects.equals(fullNameStaff, "")) return;
 
         this.executor.shutdown();
         FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
-                MainApplication.class.getResource("creating-order.fxml")));
+                MainApplication.class.getResource("take-more-info-order-for-make.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
-        org.vitapasser.photocopypoint.Controller.CreatingOrder.Controller controller = FXMLLoader.getController();
-        controller.putData(register);
+        org.vitapasser.photocopypoint.Controller.TakeMoreInfoForMake.Controller controller = FXMLLoader.getController();
+        controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().getId(), fullNameStaff);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("Створення нового замовлення");
+        stage.setTitle("Осматрювачь не виготавленого замовлення");
         stage.show();
     }
 
     @FXML
-    protected void onGetMoreNotMadeOrdersButtonClick(ActionEvent event) throws IOException {
-
-        this.executor.shutdown();
+    protected void onCancelButtonClick(ActionEvent event) throws IOException {
         FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
-                MainApplication.class.getResource("take-orders.fxml")));
+                MainApplication.class.getResource("order-management.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
-        org.vitapasser.photocopypoint.Controller.TakeOrders.Controller controller = FXMLLoader.getController();
+        org.vitapasser.photocopypoint.Controller.OrderManagement.Controller controller = FXMLLoader.getController();
         controller.putData(register, fullNameStaff);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("Виконання існуючого замовлення");
+        stage.setTitle("Менеждер замовлень");
         stage.show();
     }
 
     @FXML
-    protected void onGetMoreInfoOrderButtonClick(ActionEvent event) throws IOException {
-        if (ticketsList.isEmpty()) return;
+    protected void onAuthorizationButtonClick(ActionEvent event) throws IOException {
+        authorization();
+    }
 
-        this.executor.shutdown();
-        FXMLLoader FXMLLoader = new FXMLLoader(Objects.requireNonNull(
-                MainApplication.class.getResource("take-more-info-order.fxml")));
-        Scene scene = new Scene(FXMLLoader.load());
-        org.vitapasser.photocopypoint.Controller.TakeMoreInfo.Controller controller = FXMLLoader.getController();
-        controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().getId());
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.setTitle("Осматрювачь готового замовлення");
-        stage.show();
+    private void authorization()
+    {
+        fullNameStaff = fullNameTextField.getText();
+        if(fullNameStaff.isEmpty()) return;
+
+        changeTable();
+        this.executor.submit(changeValuesOnListOfTicketsTableView);
+        takeMakeOrderButton.setDisable(false);
     }
 
     private void changeTable() {
-        List<Ticket> tickets = register.getAllMadeTickets();
+        List<Ticket> tickets = register.getAllNotMadeTickets(fullNameStaff);
 
         ticketsList.clear();
         ticketsList.addAll(tickets);
@@ -133,8 +137,9 @@ public class Controller {
 
             namesTypeServiceColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
 
-            changeTable();
-            this.executor.submit(changeValuesOnListOfTicketsTableView);
+            fullNameTextField.setText(fullNameStaff);
+            authorization();
+
         });
     }
     public void putData(Register register) {

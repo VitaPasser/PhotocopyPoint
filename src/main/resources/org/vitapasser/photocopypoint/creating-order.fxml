@@ -44,7 +44,6 @@
                                  </VBox.margin>
                                  <children>
                                     <Button fx:id="addTypeServiceButton" contentDisplay="BOTTOM" mnemonicParsing="false" onAction="#onAddTypeServiceButtonClick" text="Додати послугу" />
-                                    <Button contentDisplay="BOTTOM" disable="true" mnemonicParsing="false" onAction="#onCancelTypeServiceButtonClick" prefWidth="98.0" text="Відмінити" />
                                  </children>
                                  <opaqueInsets>
                                     <Insets />

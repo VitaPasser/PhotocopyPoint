@@ -25,6 +25,10 @@ module org.vitapasser.photocopypoint {
     opens org.vitapasser.photocopypoint.Controller.OrderManagement to javafx.fxml;
     exports org.vitapasser.photocopypoint.Controller.TakeMoreInfo;
     opens org.vitapasser.photocopypoint.Controller.TakeMoreInfo to javafx.fxml;
+    exports org.vitapasser.photocopypoint.Controller.TakeMoreInfoForMake;
+    opens org.vitapasser.photocopypoint.Controller.TakeMoreInfoForMake to javafx.fxml;
     exports org.vitapasser.photocopypoint.Controller.DTO;
     opens org.vitapasser.photocopypoint.Controller.DTO to javafx.fxml;
+    exports org.vitapasser.photocopypoint.Controller.TakeOrders;
+    opens org.vitapasser.photocopypoint.Controller.TakeOrders to javafx.fxml;
 }

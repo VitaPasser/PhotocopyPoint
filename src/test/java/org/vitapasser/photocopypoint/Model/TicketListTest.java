@@ -31,7 +31,7 @@ class TicketListTest {
 
         List<Ticket> ticketReference = new ArrayList<>();
 
-        ticketReference.add(new Ticket(1, 1, "Друк", false, "Іван Іванов", "+380501234567"));
+        ticketReference.add(new Ticket(1, 1, "Друк", false, false, "Іван Іванов", "+380501234567"));
 
         Assertions.assertEquals(ticketReference.getFirst(), tickets.getFirst());
     }

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint/Model</OriginalElement>
+  <nodes>
+    <node x="915.9630476846387" y="461.0">org.vitapasser.photocopypoint.Model.OrderIDAndOddMany</node>
+    <node x="510.9630476846387" y="196.0">org.vitapasser.photocopypoint.Model.Type</node>
+    <node x="652.5880476846387" y="1028.0">org.vitapasser.photocopypoint.Model.Register</node>
+    <node x="759.9630476846387" y="461.0">org.vitapasser.photocopypoint.Model.Operator</node>
+    <node x="1163.9630476846387" y="473.0">org.vitapasser.photocopypoint.Model.TypeList</node>
+    <node x="631.5880476846387" y="861.0">org.vitapasser.photocopypoint.Model.PickUpStation</node>
+    <node x="-1.5" y="666.0">org.vitapasser.photocopypoint.Model.OrderViewAndTypesViews</node>
+    <node x="1463.9630476846387" y="473.0">org.vitapasser.photocopypoint.Model.TicketList</node>
+    <node x="976.889479207661" y="618.0">org.vitapasser.photocopypoint.Model.Order</node>
+    <node x="1583.7130476846387" y="184.0">org.vitapasser.photocopypoint.Model.Ticket</node>
+    <node x="438.96304768463875" y="461.0">org.vitapasser.photocopypoint.Model.TypeItem</node>
+    <node x="820.1764315230223" y="-33.0">org.vitapasser.photocopypoint.Model.Money</node>
+    <node x="115.9630476846387" y="873.0">org.vitapasser.photocopypoint.Model.OrderList</node>
+    <node x="422.42643152302225" y="-21.0">org.vitapasser.photocopypoint.Model.Term</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.vitapasser.photocopypoint.Model.PickUpStation" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="-17.5" y="-43.5" />
+      <point x="754.0880476846387" y="841.0" />
+      <point x="749.4630476846387" y="841.0" />
+      <point x="749.4630476846387" y="164.0" />
+      <point x="881.8639315230223" y="164.0" />
+      <point x="-8.8125" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.OrderList" target="org.vitapasser.photocopypoint.Model.Term" relationship="DEPENDENCY">
+      <point x="-56.0" y="-31.5" />
+      <point x="199.9630476846387" y="831.0" />
+      <point x="264.0" y="831.0" />
+      <point x="264.0" y="104.0" />
+      <point x="452.8550029515936" y="104.0" />
+      <point x="-40.57142857142867" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.TypeList" target="org.vitapasser.photocopypoint.Model.Term" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="1303.9630476846387" y="441.0" />
+      <point x="1339.0" y="441.0" />
+      <point x="1339.0" y="94.0" />
+      <point x="554.2835743801652" y="94.0" />
+      <point x="60.85714285714289" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.PickUpStation" target="org.vitapasser.photocopypoint.Model.OrderIDAndOddMany" relationship="DEPENDENCY">
+      <point x="52.5" y="-43.5" />
+      <point x="824.0880476846387" y="821.0" />
+      <point x="938.889479207661" y="821.0" />
+      <point x="938.889479207661" y="598.0" />
+      <point x="969.9630476846387" y="598.0" />
+      <point x="-54.0" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.Term" relationship="DEPENDENCY">
+      <point x="-108.18181818181813" y="-79.5" />
+      <point x="663.4062295028207" y="1008.0" />
+      <point x="-12.0" y="1008.0" />
+      <point x="-12.0" y="94.0" />
+      <point x="432.56928866587936" y="94.0" />
+      <point x="-60.85714285714289" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.OrderIDAndOddMany" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="1023.9630476846387" y="164.0" />
+      <point x="899.4889315230223" y="164.0" />
+      <point x="8.8125" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.Ticket" relationship="DEPENDENCY">
+      <point x="86.54545454545456" y="-79.5" />
+      <point x="858.1335022300933" y="998.0" />
+      <point x="1754.4630476846387" y="998.0" />
+      <point x="1754.4630476846387" y="441.0" />
+      <point x="1726.9630476846387" y="441.0" />
+      <point x="47.75" y="103.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.OrderList" target="org.vitapasser.photocopypoint.Model.OrderViewAndTypesViews" relationship="DEPENDENCY">
+      <point x="-112.0" y="-31.5" />
+      <point x="143.9630476846387" y="841.0" />
+      <point x="189.75" y="841.0" />
+      <point x="63.75" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.TypeItem" target="org.vitapasser.photocopypoint.Model.Type" relationship="DEPENDENCY">
+      <point x="41.0" y="-43.5" />
+      <point x="541.4630476846387" y="441.0" />
+      <point x="605.9630476846387" y="441.0" />
+      <point x="-19.0" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.Term" relationship="DEPENDENCY">
+      <point x="14.0" y="-91.5" />
+      <point x="1102.889479207661" y="588.0" />
+      <point x="1142.4630476846387" y="588.0" />
+      <point x="1142.4630476846387" y="114.0" />
+      <point x="533.997860094451" y="114.0" />
+      <point x="40.57142857142867" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.PickUpStation" relationship="DEPENDENCY">
+      <point x="0.0" y="91.5" />
+      <point x="1088.889479207661" y="841.0" />
+      <point x="894.0880476846387" y="841.0" />
+      <point x="122.5" y="-43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.PickUpStation" target="org.vitapasser.photocopypoint.Model.Order" relationship="DEPENDENCY">
+      <point x="87.5" y="-43.5" />
+      <point x="859.0880476846387" y="831.0" />
+      <point x="1014.2228125409945" y="831.0" />
+      <point x="-74.66666666666652" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.OrderViewAndTypesViews" relationship="DEPENDENCY">
+      <point x="-86.5454545454545" y="-79.5" />
+      <point x="685.0425931391842" y="998.0" />
+      <point x="62.25" y="998.0" />
+      <point x="-63.75" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.OrderList" target="org.vitapasser.photocopypoint.Model.Type" relationship="DEPENDENCY">
+      <point x="56.0" y="-31.5" />
+      <point x="311.9630476846387" y="841.0" />
+      <point x="308.14259067952275" y="841.0" />
+      <point x="308.14259067952275" y="421.0" />
+      <point x="529.9630476846387" y="421.0" />
+      <point x="-95.0" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.Operator" relationship="DEPENDENCY">
+      <point x="-70.0" y="-91.5" />
+      <point x="1018.889479207661" y="578.0" />
+      <point x="861.2130476846387" y="578.0" />
+      <point x="33.75" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.PickUpStation" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.5" />
+      <point x="0.0" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.Type" relationship="DEPENDENCY">
+      <point x="-43.27272727272725" y="-79.5" />
+      <point x="728.3153204119114" y="978.0" />
+      <point x="406.46304768463875" y="978.0" />
+      <point x="406.46304768463875" y="431.0" />
+      <point x="567.9630476846387" y="431.0" />
+      <point x="-57.0" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.TypeList" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="93.33333333333343" y="-31.5" />
+      <point x="1397.2963810179722" y="441.0" />
+      <point x="1360.093098189689" y="441.0" />
+      <point x="1360.093098189689" y="84.0" />
+      <point x="934.7389315230223" y="84.0" />
+      <point x="44.0625" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.Type" relationship="DEPENDENCY">
+      <point x="-42.0" y="-91.5" />
+      <point x="1046.889479207661" y="568.0" />
+      <point x="905.4630476846387" y="568.0" />
+      <point x="905.4630476846387" y="441.0" />
+      <point x="681.9630476846387" y="441.0" />
+      <point x="57.0" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.TypeItem" target="org.vitapasser.photocopypoint.Model.Term" relationship="DEPENDENCY">
+      <point x="-41.0" y="-43.5" />
+      <point x="459.46304768463875" y="411.0" />
+      <point x="464.46304768463875" y="411.0" />
+      <point x="464.46304768463875" y="124.0" />
+      <point x="493.42643152302225" y="124.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.TicketList" target="org.vitapasser.photocopypoint.Model.Ticket" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="1603.9630476846387" y="441.0" />
+      <point x="1631.4630476846387" y="441.0" />
+      <point x="-47.75" y="103.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.Order" relationship="DEPENDENCY">
+      <point x="21.636363636363626" y="-79.5" />
+      <point x="793.2244113210024" y="968.0" />
+      <point x="1203.1297143513052" y="968.0" />
+      <point x="1203.1297143513052" y="841.0" />
+      <point x="1163.5561458743275" y="841.0" />
+      <point x="74.66666666666652" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.TypeList" relationship="DEPENDENCY">
+      <point x="70.0" y="-91.5" />
+      <point x="1158.889479207661" y="588.0" />
+      <point x="1233.9630476846387" y="588.0" />
+      <point x="-70.0" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.OrderList" relationship="DEPENDENCY">
+      <point x="-64.90909090909088" y="-79.5" />
+      <point x="706.6789567755479" y="988.0" />
+      <point x="255.9630476846387" y="988.0" />
+      <point x="0.0" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.PickUpStation" target="org.vitapasser.photocopypoint.Model.Type" relationship="DEPENDENCY">
+      <point x="-52.5" y="-43.5" />
+      <point x="719.0880476846387" y="821.0" />
+      <point x="643.9630476846387" y="821.0" />
+      <point x="19.0" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.TypeList" relationship="DEPENDENCY">
+      <point x="43.27272727272725" y="-79.5" />
+      <point x="814.860774957366" y="978.0" />
+      <point x="1373.9630476846387" y="978.0" />
+      <point x="69.99999999999994" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.PickUpStation" target="org.vitapasser.photocopypoint.Model.Operator" relationship="DEPENDENCY">
+      <point x="17.5" y="-43.5" />
+      <point x="789.0880476846387" y="841.0" />
+      <point x="793.7130476846387" y="841.0" />
+      <point x="-33.75" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.TicketList" relationship="DEPENDENCY">
+      <point x="64.90909090909088" y="-79.5" />
+      <point x="836.4971385937297" y="988.0" />
+      <point x="1673.9630476846387" y="988.0" />
+      <point x="70.0" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Type" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="57.0" y="-91.5" />
+      <point x="681.9630476846387" y="154.0" />
+      <point x="864.2389315230223" y="154.0" />
+      <point x="-26.4375" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.TicketList" relationship="DEPENDENCY">
+      <point x="98.0" y="-91.5" />
+      <point x="1186.889479207661" y="598.0" />
+      <point x="1533.9630476846387" y="598.0" />
+      <point x="-70.0" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Type" target="org.vitapasser.photocopypoint.Model.Term" relationship="DEPENDENCY">
+      <point x="-57.0" y="-91.5" />
+      <point x="567.9630476846387" y="124.0" />
+      <point x="513.7121458087365" y="124.0" />
+      <point x="20.28571428571422" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.TypeItem" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="0.0" y="-43.5" />
+      <point x="500.4630476846387" y="144.0" />
+      <point x="846.6139315230223" y="144.0" />
+      <point x="-44.0625" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="108.18181818181819" y="-79.5" />
+      <point x="879.7698658664569" y="1008.0" />
+      <point x="1789.0880476846387" y="1008.0" />
+      <point x="1789.0880476846387" y="74.0" />
+      <point x="952.3639315230223" y="74.0" />
+      <point x="61.6875" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.OrderList" target="org.vitapasser.photocopypoint.Model.TypeItem" relationship="DEPENDENCY">
+      <point x="112.0" y="-31.5" />
+      <point x="367.9630476846387" y="841.0" />
+      <point x="319.14259067952275" y="841.0" />
+      <point x="319.14259067952275" y="588.0" />
+      <point x="454.33804768463875" y="588.0" />
+      <point x="-46.125" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Register" target="org.vitapasser.photocopypoint.Model.TypeItem" relationship="DEPENDENCY">
+      <point x="-21.636363636363626" y="-79.5" />
+      <point x="749.9516840482752" y="968.0" />
+      <point x="417.46304768463875" y="968.0" />
+      <point x="417.46304768463875" y="598.0" />
+      <point x="485.08804768463875" y="598.0" />
+      <point x="-15.375" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.OrderList" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="0.0" y="-31.5" />
+      <point x="255.9630476846387" y="841.0" />
+      <point x="275.0" y="841.0" />
+      <point x="275.0" y="134.0" />
+      <point x="828.9889315230223" y="134.0" />
+      <point x="-61.6875" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.PickUpStation" target="org.vitapasser.photocopypoint.Model.Term" relationship="DEPENDENCY">
+      <point x="-122.5" y="-43.5" />
+      <point x="649.0880476846387" y="841.0" />
+      <point x="428.46304768463875" y="841.0" />
+      <point x="428.46304768463875" y="114.0" />
+      <point x="473.140717237308" y="114.0" />
+      <point x="-20.28571428571422" y="31.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.TypeList" target="org.vitapasser.photocopypoint.Model.Type" relationship="DEPENDENCY">
+      <point x="-93.33333333333326" y="-31.5" />
+      <point x="1210.6297143513054" y="431.0" />
+      <point x="719.9630476846387" y="431.0" />
+      <point x="95.0" y="91.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.PickUpStation" target="org.vitapasser.photocopypoint.Model.TypeItem" relationship="DEPENDENCY">
+      <point x="-87.5" y="-43.5" />
+      <point x="684.0880476846387" y="831.0" />
+      <point x="515.8380476846387" y="831.0" />
+      <point x="15.375" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.OrderIDAndOddMany" relationship="DEPENDENCY">
+      <point x="-14.0" y="-91.5" />
+      <point x="1074.889479207661" y="598.0" />
+      <point x="1077.9630476846387" y="598.0" />
+      <point x="54.0" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.TypeItem" relationship="DEPENDENCY">
+      <point x="-98.0" y="-91.5" />
+      <point x="990.889479207661" y="588.0" />
+      <point x="546.5880476846387" y="588.0" />
+      <point x="46.125" y="43.5" />
+    </edge>
+    <edge source="org.vitapasser.photocopypoint.Model.Order" target="org.vitapasser.photocopypoint.Model.Money" relationship="DEPENDENCY">
+      <point x="42.0" y="-91.5" />
+      <point x="1130.889479207661" y="598.0" />
+      <point x="1153.4630476846387" y="598.0" />
+      <point x="1153.4630476846387" y="104.0" />
+      <point x="917.1139315230223" y="104.0" />
+      <point x="26.4375" y="43.5" />
+    </edge>
+  </edges>
+  <settings layout="Compact" zoom="0.5660299003322259" showDependencies="true" x="680.8261188554659" y="560.7278063096112" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
