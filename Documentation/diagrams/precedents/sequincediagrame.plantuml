@@ -1,0 +1,32 @@
+@startuml precedents
+
+actor Касир as к
+actor Оператор as о
+participant ":System" as s
+
+к -> s: newOrderO
+к -> s: addType(name, count)
+к <-- s: Всі додані типи 
+к -> s: getTerm() 
+к <-- s: Загальний термін вироблення
+к -> s: getPrice() 
+к <-- s: Загальна ціна
+к -> s: makePayment(countPayMoney, fullName, phoneNumber) 
+к <-- s: Решта, яку потрібно заплатити клієнтом
+к -> s: getTypse(likeNameTypes)
+к <-- s: Множину можливих типів для обрання
+к -> s: getOrderTypes()
+к <-- s: Всі додані типи
+к -> s: getAllTickets()
+к <-- s: Стан замовлень, які зафіксовані, але створюються, або ще не зібрали
+к <-- s: Всі додані типи
+к -> s: getAllMadeTickets()
+к <-- s: Стан замовлень, які зафіксовані та створені, але ще не зібрали
+к <-- s: Всі додані типи
+к -> s: getFullInfoAboutOrder()
+к <-- s: Подробна інформація щодо замовлення, хто його заказав, який квіток та його стан
+к -> s: giveTheOrder(long TicketId)
+о -> s: getAllNotMadeTickets(String fullNameStaff)
+о <-- s: Подробна інформація щодо замовлення, хто його заказав, який квіток та його стан
+о -> s: madeTheOrder(long TicketId)
+@enduml
