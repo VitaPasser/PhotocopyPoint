@@ -76,24 +76,26 @@
    </right>
    <center>
       <BorderPane BorderPane.alignment="CENTER">
-         <center>
-            <ScrollPane fitToHeight="true" fitToWidth="true">
-               <content>
-                  <TableView fx:id="listOfTicketsTableView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn fx:id="idTicketColumn" prefWidth="75.0" text="Ід квитка" />
-                        <TableColumn fx:id="fullNameColumn" prefWidth="75.0" text="ПІБ" />
-                        <TableColumn fx:id="phoneNumberColumn" prefWidth="75.0" text="Телефон" />
-                        <TableColumn fx:id="namesTypeServiceColumn" prefWidth="75.0" text="Назви послуг" />
-                        <TableColumn fx:id="isReadyColumn" prefWidth="75.0" text="Готово" />
-                    </columns>
-                     <columnResizePolicy>
-                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                     </columnResizePolicy>
-                  </TableView>
-               </content>
-            </ScrollPane>
-         </center>
+          <center>
+              <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <content>
+                      <TableView fx:id="listSelectedServices" prefHeight="200.0" prefWidth="200.0">
+                          <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                          </columnResizePolicy>
+                          <columns>
+                              <TableColumn fx:id="idTypeColumn1" prefWidth="75.0" text="Ід" />
+                              <TableColumn fx:id="nameTypeColumn1" prefWidth="75.0" text="Назва" />
+                              <TableColumn fx:id="infoTypeColumn1" prefWidth="75.0" text="Додаткова інформація" />
+                              <TableColumn fx:id="termTypeColumn1" prefWidth="75.0" text="Термін" />
+                              <TableColumn fx:id="countTypeColumn1" prefWidth="75.0" text="Кількість" />
+                              <TableColumn fx:id="countMoneyTypeColumn1" prefWidth="75.0" text="Ціна" />
+                              <TableColumn fx:id="currencyMoneyTypeColumn1" prefWidth="75.0" text="Валюта" />
+                          </columns>
+                      </TableView>
+                  </content>
+              </ScrollPane>
+          </center>
          <top>
             <Label text="Послуги у замовлені" BorderPane.alignment="CENTER" />
          </top>

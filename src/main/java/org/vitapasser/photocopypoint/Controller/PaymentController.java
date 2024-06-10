@@ -12,11 +12,10 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import org.vitapasser.photocopypoint.Controller.DTO.TypeView;
 import org.vitapasser.photocopypoint.Controller.OrderManagement.Controller;
 import org.vitapasser.photocopypoint.MainApplication;
-import org.vitapasser.photocopypoint.Model.Money;
-import org.vitapasser.photocopypoint.Model.Register;
-import org.vitapasser.photocopypoint.Model.Ticket;
+import org.vitapasser.photocopypoint.Model.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -29,25 +28,38 @@ public class PaymentController {
 
     ObservableList<Ticket> ticketsList = FXCollections.observableArrayList();
 
+    ObservableList<TypeView> typeViewsListSelectedServices = FXCollections.observableArrayList();
 
     @FXML
-    TableView<Ticket> listOfTicketsTableView;
+    private TableColumn<TypeView, Double> countMoneyTypeColumn1;
 
     @FXML
-    private TableColumn<Ticket, String> fullNameColumn;
+    private TableColumn<TypeView, String> currencyMoneyTypeColumn1;
 
     @FXML
-    private TableColumn<Ticket, Long> idTicketColumn;
+    private TableColumn<TypeView, Long> idTypeColumn1;
 
     @FXML
-    private TableColumn<Ticket, Boolean> isReadyColumn;
+    private TableColumn<TypeView, String> infoTypeColumn1;
 
     @FXML
-    private TableColumn<Ticket, String> namesTypeServiceColumn;
+    private TableColumn<TypeView, String> nameTypeColumn1;
 
     @FXML
-    private TableColumn<Ticket, String> phoneNumberColumn;
+    private TableColumn<TypeView, String> termTypeColumn1;
 
+    @FXML
+    protected TableColumn<TypeView, Integer> countTypeColumn1;
+
+    @FXML
+    protected TableView<TypeView> listSelectedServices;
+
+    private void initLoadTackedTable() {
+        List<TypeItem> types = register.getOrderTypes();
+
+        typeViewsListSelectedServices.clear();
+        types.forEach(type -> typeViewsListSelectedServices.add(new TypeView(type)));
+    }
 
     @FXML
     Label resultOddMoney;
@@ -77,7 +89,6 @@ public class PaymentController {
             return;
         }
 
-
         try {
             if (Double.parseDouble(countClientPayTextField.getText()) < register.getPrice().value()){
                 payLabel.setText("До сплати| Не вистачає\n грошей для оплати!");
@@ -95,7 +106,6 @@ public class PaymentController {
 
             cancelButton.setDisable(true);
             acceptButton.setDisable(true);
-            changeTable();
         } catch (NumberFormatException e) {
             payLabel.setText("До сплати| Використовуйте\n тільки числа та точку!");
         }
@@ -129,32 +139,28 @@ public class PaymentController {
         stage.show();
     }
 
-    private void changeTable() {
-        List<Ticket> tickets = register.getAllTickets();
-
-        ticketsList.clear();
-        ticketsList.addAll(tickets);
-    }
-
     @FXML
     private void initialize() {
         Platform.runLater(() -> {
             resultPrice.setText(register.getPrice().toString());
+            listSelectedServices.setItems(typeViewsListSelectedServices);
+            typeViewsListSelectedServices.clear();
 
-            listOfTicketsTableView.setItems(ticketsList);
-            ticketsList.clear();
+            idTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("id"));
 
-            idTicketColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+            nameTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("name"));
 
-            fullNameColumn.setCellValueFactory(new PropertyValueFactory<>("fullName"));
+            infoTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("info"));
 
-            phoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
+            termTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("term"));
 
-            isReadyColumn.setCellValueFactory(new PropertyValueFactory<>("isReady"));
+            countMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("countMoney"));
 
-            namesTypeServiceColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+            currencyMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("currencyMoney"));
 
-            changeTable();
+            countTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("count"));
+
+            initLoadTackedTable();
         });
     }
 
@@ -163,4 +169,5 @@ public class PaymentController {
         this.nameClient = nameClient;
         this.phoneNumberClient = phoneNumberClient;
     }
+
 }

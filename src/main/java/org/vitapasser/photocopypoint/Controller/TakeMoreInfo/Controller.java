@@ -17,8 +17,6 @@ import org.vitapasser.photocopypoint.Model.Register;
 
 import java.io.IOException;
 import java.util.Objects;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Controller {
     private Register register;

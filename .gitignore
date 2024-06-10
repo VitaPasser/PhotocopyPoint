@@ -36,3 +36,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+out/artifacts/PhotocopyPoint_jar/Production/JRE/
+out/artifacts/PhotocopyPoint_jar/installer/Setup\ Photocopy\ Point\ App.exe
+out/artifacts/PhotocopyPoint_jar/installer/Setup Photocopy Point App.exe
+out/artifacts/PhotocopyPoint_jar/installer/Setup Photocopy Point App.exe

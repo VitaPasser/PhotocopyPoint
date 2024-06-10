@@ -85,7 +85,7 @@ public class Controller {
         controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().getId(), fullNameStaff);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("Осматрювачь не виготавленого замовлення");
+        stage.setTitle("Оглядач не виготовленого замовлення");
         stage.show();
     }
 

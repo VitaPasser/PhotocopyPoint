@@ -109,7 +109,7 @@ public class Controller {
         controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().getId());
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("Осматрювачь готового замовлення");
+        stage.setTitle("Оглядач виконаного замовлення");
         stage.show();
     }
 

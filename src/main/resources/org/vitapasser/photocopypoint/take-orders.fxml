@@ -29,7 +29,7 @@
                            <children>
                               <Label text="ФІО виконавця" />
                               <TextField fx:id="fullNameTextField" alignment="CENTER" prefWidth="200.0" />
-                              <Button mnemonicParsing="false" onAction="#onAuthorizationButtonClick" prefWidth="200.0" text="Авторазуватись" />
+                              <Button mnemonicParsing="false" onAction="#onAuthorizationButtonClick" prefWidth="200.0" text="Авторизуватись" />
                            </children>
                         </VBox>
                      </children>
@@ -49,7 +49,7 @@
 <center>
     <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <top>
-            <Label text="Готові замовлення" BorderPane.alignment="CENTER" />
+            <Label text="Не виконині замовлення" BorderPane.alignment="CENTER" />
         </top>
         <center>
             <ScrollPane fitToHeight="true" fitToWidth="true">
