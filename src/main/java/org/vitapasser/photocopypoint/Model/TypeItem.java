@@ -1,9 +1,11 @@
 package org.vitapasser.photocopypoint.Model;
 
-public record TypeItem(Type type, int count) {
+public record TypeItem(Type type,
+                       int count) {
 
     public Money getMoney() {
-        return new Money(type.money().value() * count, type.money().unit());
+        return new Money(type.money().value() * count,
+                type.money().unit());
     }
 
     public Term getTerm() {

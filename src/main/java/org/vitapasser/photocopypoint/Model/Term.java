@@ -15,8 +15,7 @@ public record Term(Integer value) {
 
     @Override
     public String toString() {
-        LocalTime time = toLocalTime();
-
-        return time.format(DateTimeFormatter.ofPattern("HH:mm:ss"));
+        return toLocalTime().format(
+                DateTimeFormatter.ofPattern("HH:mm:ss"));
     }
 }

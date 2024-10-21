@@ -15,6 +15,7 @@ module org.vitapasser.photocopypoint {
 
     opens org.vitapasser.photocopypoint to javafx.fxml;
     exports org.vitapasser.photocopypoint;
+    exports org.vitapasser.photocopypoint.Exception;
     exports org.vitapasser.photocopypoint.Controller;
     opens org.vitapasser.photocopypoint.Controller to javafx.fxml;
     exports org.vitapasser.photocopypoint.Model;

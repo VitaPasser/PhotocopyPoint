@@ -11,17 +11,25 @@
   <component name="ChangeListManager">
     <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project cleared">
       <change afterPath="$PROJECT_DIR$/Documentation/~$рсова АС-221 Воробйов В.П..docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/~WRL3293.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2a14d5d0-f1c7-48f3-9de6-af794a029efe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2a14d5d0-f1c7-48f3-9de6-af794a029efe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentation/Курсова АС-221 Воробйов В.П..docx" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Курсова АС-221 Воробйов В.П..docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/PhotocopyPoint.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/PhotocopyPoint.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/Production/PhotocopyPointApp.exe" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/Production/PhotocopyPointApp.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/installer/Setup Photocopy Point App.exe" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/installer/Setup Photocopy Point App.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/installer/installer srcipt.iss" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar/installer/installer srcipt.iss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/PhotocopyPoint_jar3/PhotocopyPointApp.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Configuration/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagement/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagement/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/PaymentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeMoreInfo/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeMoreInfo/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/org/vitapasser/photocopypoint/payment.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/org/vitapasser/photocopypoint/payment.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeMoreInfoForMake/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeMoreInfoForMake/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeOrders/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeOrders/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderViewAndTypesViews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderViewAndTypesViews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Term.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Type.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +55,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$MAVEN_REPOSITORY$/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33-sources.jar!/com/mysql/cj/jdbc/ConnectionImpl.java" root0="SKIP_INSPECTION" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -55,7 +67,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -99,7 +111,7 @@
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/src/PhotocopyPoint/src/main/java/org/vitapasser/photocopypoint&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/vita/Documents/Политехникум/2 Курс/4 семестр/Курсовая/Программа/v1/src/PhotocopyPoint/Documentation/diagrams&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/vita/Desktop&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -243,8 +255,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestApplication" />
       <item itemvalue="Application.MainApplication" />
+      <item itemvalue="Application.TestApplication" />
       <item itemvalue="Application.Launcher" />
       <item itemvalue="Database Script.MySQL Fragment (OrderList.java:475).sql" />
       <item itemvalue="JUnit.OrderListTest.getFullInfoAboutOrder" />
@@ -305,7 +317,27 @@
       <workItem from="1717974188988" duration="2672000" />
       <workItem from="1718014075725" duration="1030000" />
       <workItem from="1718019521746" duration="820000" />
-      <workItem from="1718024849160" duration="3089000" />
+      <workItem from="1718024849160" duration="3808000" />
+      <workItem from="1718048914241" duration="1399000" />
+      <workItem from="1718088713197" duration="535000" />
+      <workItem from="1718114003177" duration="14000" />
+      <workItem from="1718120811414" duration="1452000" />
+      <workItem from="1718278536192" duration="2000" />
+      <workItem from="1718539282129" duration="7000" />
+      <workItem from="1718697631787" duration="13000" />
+      <workItem from="1718716881251" duration="4534000" />
+      <workItem from="1718722788019" duration="1233000" />
+      <workItem from="1722697749178" duration="86000" />
+      <workItem from="1726215393400" duration="1789000" />
+      <workItem from="1727189639304" duration="965000" />
+      <workItem from="1727193048261" duration="597000" />
+      <workItem from="1727283146658" duration="86000" />
+      <workItem from="1728645721931" duration="1241000" />
+      <workItem from="1728735752719" duration="11000" />
+      <workItem from="1729269471451" duration="5152000" />
+      <workItem from="1729368601272" duration="634000" />
+      <workItem from="1729454044171" duration="5000" />
+      <workItem from="1729493908450" duration="9569000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -390,24 +422,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java</url>
-          <line>101</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/vitapasser/photocopypoint/Model/TypeListTest.java</url>
           <line>48</line>
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/PickUpStation.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/DTO/TypeView.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

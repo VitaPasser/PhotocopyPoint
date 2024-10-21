@@ -42,16 +42,6 @@ public class TypeView {
         this.count = type.count();
     }
 
-    public TypeView(TypeItem type, boolean isForTakeMoreInfo){
-        this.id = type.type().id();
-        this.name = type.type().name();
-        this.info = type.type().info();
-        this.term = type.type().term().toLocalTime();
-        this.countMoney = type.getMoney().value();
-        this.currencyMoney = type.getMoney().unit();
-        this.count = type.count();
-    }
-
     public long getId() {
         return id;
     }

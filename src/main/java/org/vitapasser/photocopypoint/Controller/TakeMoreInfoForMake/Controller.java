@@ -1,6 +1,7 @@
 package org.vitapasser.photocopypoint.Controller.TakeMoreInfoForMake;
 
 import javafx.application.Platform;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -98,17 +99,12 @@ public class Controller {
             typeServices.clear();
             typeServices.addAll(orderView.typeViews());
 
-            idTypeService.setCellValueFactory(new PropertyValueFactory<>("id"));
-
-            nameTypeService.setCellValueFactory(new PropertyValueFactory<>("name"));
-
-            infoTypeService.setCellValueFactory(new PropertyValueFactory<>("info"));
-
-            termTypeService.setCellValueFactory(new PropertyValueFactory<>("term"));
-
-            countTypeService.setCellValueFactory(new PropertyValueFactory<>("count"));
-
-            costTypeService.setCellValueFactory(new PropertyValueFactory<>("money"));
+            idTypeService.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getId()));
+            nameTypeService.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getName()));
+            infoTypeService.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getInfo()));
+            termTypeService.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getTerm()));
+            countTypeService.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCount()));
+            costTypeService.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getMoney()));
             typeTableView.setItems(typeServices);
         });
     }

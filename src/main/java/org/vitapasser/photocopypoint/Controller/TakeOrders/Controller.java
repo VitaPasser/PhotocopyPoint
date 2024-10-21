@@ -1,6 +1,8 @@
 package org.vitapasser.photocopypoint.Controller.TakeOrders;
 
 import javafx.application.Platform;
+import javafx.beans.property.SimpleLongProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -82,7 +84,7 @@ public class Controller {
                 MainApplication.class.getResource("take-more-info-order-for-make.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
         org.vitapasser.photocopypoint.Controller.TakeMoreInfoForMake.Controller controller = FXMLLoader.getController();
-        controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().getId(), fullNameStaff);
+        controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().id(), fullNameStaff);
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.setTitle("Оглядач не виготовленого замовлення");
@@ -129,13 +131,17 @@ public class Controller {
             listOfTicketsTableView.setItems(ticketsList);
             ticketsList.clear();
 
-            idTicketColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+            idTicketColumn.setCellValueFactory(
+                    p -> new SimpleLongProperty(p.getValue().id()).asObject());
 
-            fullNameColumn.setCellValueFactory(new PropertyValueFactory<>("fullName"));
+            fullNameColumn.setCellValueFactory(
+                    p-> new SimpleStringProperty(p.getValue().fullName()));
 
-            phoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
+            phoneNumberColumn.setCellValueFactory(
+                    p -> new SimpleStringProperty(p.getValue().phoneNumber()));
 
-            namesTypeServiceColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+            namesTypeServiceColumn.setCellValueFactory(
+                    p -> new SimpleStringProperty(p.getValue().name()));
 
             fullNameTextField.setText(fullNameStaff);
             authorization();

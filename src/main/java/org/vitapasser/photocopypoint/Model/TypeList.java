@@ -41,21 +41,7 @@ public class TypeList {
                     ORDER BY TS.id DESC;
                     """;
 
-            PreparedStatement statement = connectionToDataBase.prepareStatement(sql);
-            statement.setString(1, likeNameTypes);
-
-            statement.executeQuery();
-
-            ResultSet resultSet = statement.getResultSet();
-
-            while(resultSet.next()){
-                types.add(new Type(resultSet.getLong("id"),
-                        resultSet.getString("name"),
-                        resultSet.getString("info"),
-                        new Term(resultSet.getTime("term").toLocalTime().toSecondOfDay()),
-                        new Money(resultSet.getDouble("count"), resultSet.getString("unit")),
-                        Mysql.dbDateTimeToLocalDateTime(resultSet.getString("create_time"))));
-            }
+            executeQuery(likeNameTypes, sql, types);
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -85,25 +71,33 @@ public class TypeList {
                     where TS.name like CONCAT('%', ?, '%')
                     ORDER BY TS.create_time DESC LIMIT 1;""";
 
-            PreparedStatement statement = connectionToDataBase.prepareStatement(sql);
-            statement.setString(1, typeName);
-
-            statement.executeQuery();
-
-            ResultSet resultSet = statement.getResultSet();
-
-            resultSet.next();
-            return new Type(resultSet.getLong("id"),
-                    resultSet.getString("name"),
-                    resultSet.getString("info"),
-                    new Term(resultSet.getTime("term").toLocalTime().toSecondOfDay()),
-                    new Money(resultSet.getDouble("count"), resultSet.getString("unit")),
-                    Mysql.dbDateTimeToLocalDateTime(resultSet.getString("create_time")));
+            return executeQuery(typeName, sql, new ArrayList<>()).getFirst();
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
 
         return null;
+    }
+
+
+    private List<Type> executeQuery(String likeNameTypes, String sql, List<Type> types) throws SQLException {
+        PreparedStatement statement = connectionToDataBase.prepareStatement(sql);
+        statement.setString(1, likeNameTypes);
+
+        statement.executeQuery();
+
+        ResultSet resultSet = statement.getResultSet();
+
+        while(resultSet.next()){
+            types.add(new Type(resultSet.getLong("id"),
+                    resultSet.getString("name"),
+                    resultSet.getString("info"),
+                    new Term(resultSet.getTime("term").toLocalTime().toSecondOfDay()),
+                    new Money(resultSet.getDouble("count"), resultSet.getString("unit")),
+                    Mysql.dbDateTimeToLocalDateTime(resultSet.getString("create_time"))));
+        }
+
+        return types;
     }
 }

@@ -1,6 +1,9 @@
 package org.vitapasser.photocopypoint.Controller.OrderManagement;
 
 import javafx.application.Platform;
+import javafx.beans.property.SimpleLongProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -106,7 +109,7 @@ public class Controller {
                 MainApplication.class.getResource("take-more-info-order.fxml")));
         Scene scene = new Scene(FXMLLoader.load());
         org.vitapasser.photocopypoint.Controller.TakeMoreInfo.Controller controller = FXMLLoader.getController();
-        controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().getId());
+        controller.putData(register, listOfTicketsTableView.getSelectionModel().getSelectedItem().id());
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         stage.setScene(scene);
         stage.setTitle("Оглядач виконаного замовлення");
@@ -125,13 +128,17 @@ public class Controller {
             listOfTicketsTableView.setItems(ticketsList);
             ticketsList.clear();
 
-            idTicketColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
+            idTicketColumn.setCellValueFactory(
+                    p -> new SimpleObjectProperty<>(p.getValue().id()));
 
-            fullNameColumn.setCellValueFactory(new PropertyValueFactory<>("fullName"));
+            fullNameColumn.setCellValueFactory(
+                    p-> new SimpleObjectProperty<>(p.getValue().fullName()));
 
-            phoneNumberColumn.setCellValueFactory(new PropertyValueFactory<>("phoneNumber"));
+            phoneNumberColumn.setCellValueFactory(
+                    p -> new SimpleObjectProperty<>(p.getValue().phoneNumber()));
 
-            namesTypeServiceColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
+            namesTypeServiceColumn.setCellValueFactory(
+                    p -> new SimpleObjectProperty<>(p.getValue().name()));
 
             changeTable();
             this.executor.submit(changeValuesOnListOfTicketsTableView);

@@ -2,6 +2,9 @@ package org.vitapasser.photocopypoint.Controller.CreatingOrder;
 
 import com.mysql.cj.util.StringUtils;
 import javafx.application.Platform;
+import javafx.beans.property.SimpleLongProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -68,7 +71,7 @@ public class Controller {
     private TableColumn<TypeView, LocalTime> termTypeColumn;
 
     @FXML
-    private TableColumn<TypeView, String> termTypeColumn1;
+    private TableColumn<TypeView, LocalTime> termTypeColumn1;
 
     @FXML
     protected TableColumn<TypeView, Integer> countTypeColumn1;
@@ -230,25 +233,25 @@ public class Controller {
             typeViewsListOfSelectableServices.clear();
             typeViewsListSelectedServices.clear();
 
-            idTypeColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
-            idTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("id"));
+            idTypeColumn.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getId()));
+            idTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getId()));
 
-            nameTypeColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
-            nameTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("name"));
+            nameTypeColumn.setCellValueFactory (p -> new SimpleObjectProperty<>(p.getValue().getName()));
+            nameTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getName()));
 
-            infoTypeColumn.setCellValueFactory(new PropertyValueFactory<>("info"));
-            infoTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("info"));
+            infoTypeColumn.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getInfo()));
+            infoTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getInfo()));
 
-            termTypeColumn.setCellValueFactory(new PropertyValueFactory<>("term"));
-            termTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("term"));
+            termTypeColumn.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getTerm()));
+            termTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getTerm()));
 
-            countMoneyTypeColumn.setCellValueFactory(new PropertyValueFactory<>("countMoney"));
-            countMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("countMoney"));
+            countMoneyTypeColumn.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCountMoney()));
+            countMoneyTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCountMoney()));
 
-            currencyMoneyTypeColumn.setCellValueFactory(new PropertyValueFactory<>("currencyMoney"));
-            currencyMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("currencyMoney"));
+            currencyMoneyTypeColumn.setCellValueFactory (p -> new SimpleObjectProperty<>(p.getValue().getCurrencyMoney()));
+            currencyMoneyTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCurrencyMoney()));
 
-            countTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("count"));
+            countTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCount()));
 
             changeTable(typeViewsListOfSelectableServices);
             initLoadTackedTable();

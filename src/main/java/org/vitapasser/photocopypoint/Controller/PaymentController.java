@@ -1,6 +1,7 @@
 package org.vitapasser.photocopypoint.Controller;
 
 import javafx.application.Platform;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,6 +19,7 @@ import org.vitapasser.photocopypoint.MainApplication;
 import org.vitapasser.photocopypoint.Model.*;
 
 import java.io.IOException;
+import java.time.LocalTime;
 import java.util.List;
 import java.util.Objects;
 
@@ -46,7 +48,7 @@ public class PaymentController {
     private TableColumn<TypeView, String> nameTypeColumn1;
 
     @FXML
-    private TableColumn<TypeView, String> termTypeColumn1;
+    private TableColumn<TypeView, LocalTime> termTypeColumn1;
 
     @FXML
     protected TableColumn<TypeView, Integer> countTypeColumn1;
@@ -146,19 +148,13 @@ public class PaymentController {
             listSelectedServices.setItems(typeViewsListSelectedServices);
             typeViewsListSelectedServices.clear();
 
-            idTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("id"));
-
-            nameTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("name"));
-
-            infoTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("info"));
-
-            termTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("term"));
-
-            countMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("countMoney"));
-
-            currencyMoneyTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("currencyMoney"));
-
-            countTypeColumn1.setCellValueFactory(new PropertyValueFactory<>("count"));
+            idTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getId()));
+            nameTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getName()));
+            infoTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getInfo()));
+            termTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getTerm()));
+            countTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCount()));
+            countMoneyTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCountMoney()));
+            currencyMoneyTypeColumn1.setCellValueFactory(p -> new SimpleObjectProperty<>(p.getValue().getCurrencyMoney()));
 
             initLoadTackedTable();
         });

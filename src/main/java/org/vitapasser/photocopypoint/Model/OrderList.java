@@ -7,7 +7,6 @@ import org.vitapasser.photocopypoint.Util.Mysql;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -95,21 +94,7 @@ public record OrderList(Connection connectionToDataBase) {
             var orderTerm = sqlResult.getString("TypeServiceOrderTerm");
 
             List<TypeItem> typeItems = new ArrayList<>();
-            typeItems.add(new TypeItem(new Type(
-                    sqlResult.getLong("TypeId"),
-                    sqlResult.getString("TypeServiceName"),
-                    sqlResult.getString("TypeServiceInfo"),
-                    new Term(sqlResult.getTime("TypeServiceTerm")
-                            .toLocalTime()
-                            .toSecondOfDay()),
-                    new Money(
-                            sqlResult.getDouble("TypePriceCount"),
-                            sqlResult.getString("TypePriceUnit")
-                    ),
-                    Mysql.dbDateTimeToLocalDateTime(sqlResult.getString("TypeCreateTime"))),
-                    sqlResult.getInt("TypeServiceCount"))
-            );
-            while (sqlResult.next()) {
+            do {
                 typeItems.add(new TypeItem(new Type(
                         sqlResult.getLong("TypeId"),
                         sqlResult.getString("TypeServiceName"),
@@ -124,7 +109,7 @@ public record OrderList(Connection connectionToDataBase) {
                         Mysql.dbDateTimeToLocalDateTime(sqlResult.getString("TypeCreateTime"))),
                         sqlResult.getInt("TypeServiceCount"))
                 );
-            }
+            } while (sqlResult.next());
 
             OrderView orderView = new OrderView(
                     orderId1,
