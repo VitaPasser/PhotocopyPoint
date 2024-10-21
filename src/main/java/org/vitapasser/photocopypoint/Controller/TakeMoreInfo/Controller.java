@@ -10,7 +10,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import org.vitapasser.photocopypoint.MainApplication;
 import org.vitapasser.photocopypoint.Model.OrderViewAndTypesViews;
@@ -23,8 +22,8 @@ public class Controller {
     private Register register;
     OrderViewAndTypesViews orderView;
     private long OrderID;
-    private ObservableList<String> orderItems = FXCollections.observableArrayList();
-    private ObservableList<TypeView> typeServices = FXCollections.observableArrayList();
+    private final ObservableList<String> orderItems = FXCollections.observableArrayList();
+    private final ObservableList<TypeView> typeServices = FXCollections.observableArrayList();
 
     @FXML
     private TableColumn<TypeView, String> costTypeService;
@@ -79,8 +78,8 @@ public class Controller {
     public void initialize() {
         Platform.runLater(() -> {
             orderView = register.getFullInfoAboutOrder(OrderID);
-            orderItems.add("Ідентифікатор замовлення: " + String.valueOf(orderView.orderView().idOrder()));
-            orderItems.add("Ідентифікатор квитка: " + String.valueOf(orderView.orderView().idTicket()));
+            orderItems.add("Ідентифікатор замовлення: " + orderView.orderView().idOrder());
+            orderItems.add("Ідентифікатор квитка: " + orderView.orderView().idTicket());
             orderItems.add(orderView.orderView().isReady());
             orderItems.add(orderView.orderView().clientFullName());
             orderItems.add(orderView.orderView().clientPhoneNumber());

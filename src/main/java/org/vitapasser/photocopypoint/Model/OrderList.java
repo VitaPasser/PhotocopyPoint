@@ -114,14 +114,14 @@ public record OrderList(Connection connectionToDataBase) {
             OrderView orderView = new OrderView(
                     orderId1,
                     ticketId1,
-                    "Замовлення готово: " + String.valueOf(isReady),
+                    "Замовлення готово: " + isReady,
                     "ФІО клієнта: " + clientFullName,
                     "Номер телефона клієнта: " + clientPhoneNumber,
                     "ФІО оператора: " + staffFullName,
                     "Номер телефона оператора: " + staffPhoneNumber,
                     "Спеціалізація оператора: " + staffSpecialization,
                     "Адреса створення: " + addressMake,
-                    "Ціна: " + String.valueOf(costCount) + costUnit,
+                    "Ціна: " + costCount + costUnit,
                     "Назва станції, де замовили: " + stationName,
                     "Термін створення замовлення: " + orderTerm);
 

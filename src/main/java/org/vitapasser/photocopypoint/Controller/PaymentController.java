@@ -10,7 +10,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.vitapasser.photocopypoint.Controller.DTO.TypeView;
@@ -27,8 +26,6 @@ public class PaymentController {
     private Register register;
     String nameClient;
     String phoneNumberClient;
-
-    ObservableList<Ticket> ticketsList = FXCollections.observableArrayList();
 
     ObservableList<TypeView> typeViewsListSelectedServices = FXCollections.observableArrayList();
 
@@ -85,7 +82,7 @@ public class PaymentController {
     Button cancelButton;
 
     @FXML
-    private void onPaymentButtonClick(ActionEvent event) {
+    private void onPaymentButtonClick() {
         if (countClientPayTextField.getText().isEmpty()) {
             payLabel.setText("До сплати| Введіть суму оплаченою клієнтом");
             return;

@@ -2,9 +2,7 @@ package org.vitapasser.photocopypoint.Controller.CreatingOrder;
 
 import com.mysql.cj.util.StringUtils;
 import javafx.application.Platform;
-import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,9 +11,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import org.vitapasser.photocopypoint.Controller.PaymentController;
@@ -119,19 +114,19 @@ public class Controller {
     protected Label phoneNumberLabel;
 
     @FXML
-    protected void onChangeNameTypeServiceTextField(KeyEvent event) {
+    protected void onChangeNameTypeServiceTextField() {
         changeTable(typeViewsListOfSelectableServices);
     }
 
     @FXML
-    protected void onGetNameTypeServiceTableView(MouseEvent event) {
+    protected void onGetNameTypeServiceTableView() {
         TypeView typeView = listOfSelectableServices.getSelectionModel().getSelectedItem();
         if (typeView == null) return;
         nameTypeService.setText(typeView.getName());
     }
 
     @FXML
-    protected void onWriteCheckTextField(KeyEvent event) {
+    protected void onWriteCheckTextField() {
         countTypeServiceLabel.setText("Кількість послуги");
         if (!StringUtils.isStrictlyNumeric(countTypeService.getText())) {
             addTypeServiceButton.setDisable(true);
@@ -166,7 +161,7 @@ public class Controller {
     }
 
     @FXML
-    protected void onAddTypeServiceButtonClick(ActionEvent event) {
+    protected void onAddTypeServiceButtonClick() {
         if (nameTypeService.getText().isEmpty() || countTypeService.getText().isEmpty()) {
             return;
         }
@@ -182,8 +177,8 @@ public class Controller {
     }
 
     @FXML
-    protected void onWriteNamePhoneNumber(KeyEvent event) {
-        if (!phoneNumberClient.getText().matches("^(\\+\\d{1,3}\\s?)?1?\\-?\\.?\\s?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$")){
+    protected void onWriteNamePhoneNumber() {
+        if (!phoneNumberClient.getText().matches("^(\\+\\d{1,3}\\s?)?1?-?\\.?\\s?\\(?\\d{3}\\)?[\\s.-]?\\d{3}[\\s.-]?\\d{4}$")){
             phoneNumberLabel.setText("Номер телефону клієнта| Помилковий вираз!");
             paymentButton.setDisable(true);
             return;

@@ -9,14 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Project cleared">
+    <list default="true" id="218b0cd8-f755-4b1b-bf25-73b9777c420c" name="Changes" comment="Refactoring from laboratory work.">
       <change afterPath="$PROJECT_DIR$/Documentation/~$рсова АС-221 Воробйов В.П..docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2a14d5d0-f1c7-48f3-9de6-af794a029efe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2a14d5d0-f1c7-48f3-9de6-af794a029efe.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Configuration/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Configuration/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/CreatingOrder/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagement/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/OrderManagement/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/PaymentController.java" afterDir="false" />
@@ -24,12 +19,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeMoreInfoForMake/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeMoreInfoForMake/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeOrders/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Controller/TakeOrders/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderViewAndTypesViews.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/OrderViewAndTypesViews.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Term.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Term.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Ticket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Type.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/Type.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/vitapasser/photocopypoint/Model/TypeList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +326,7 @@
       <workItem from="1729269471451" duration="5152000" />
       <workItem from="1729368601272" duration="634000" />
       <workItem from="1729454044171" duration="5000" />
-      <workItem from="1729493908450" duration="9569000" />
+      <workItem from="1729493908450" duration="11107000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -387,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717951868942</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactoring from laboratory work.">
+      <option name="closed" value="true" />
+      <created>1729516590800</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1729516590800</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,7 +413,8 @@
     <MESSAGE value="Made all backend" />
     <MESSAGE value="Project made" />
     <MESSAGE value="Project cleared" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project cleared" />
+    <MESSAGE value="Refactoring from laboratory work." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring from laboratory work." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

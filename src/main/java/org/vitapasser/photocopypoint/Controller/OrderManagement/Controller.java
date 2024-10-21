@@ -1,9 +1,7 @@
 package org.vitapasser.photocopypoint.Controller.OrderManagement;
 
 import javafx.application.Platform;
-import javafx.beans.property.SimpleLongProperty;
 import javafx.beans.property.SimpleObjectProperty;
-import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -13,7 +11,6 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import org.vitapasser.photocopypoint.MainApplication;
 import org.vitapasser.photocopypoint.Model.Register;
